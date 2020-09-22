@@ -15,7 +15,7 @@ $(document).ready(function (){
       if(position > 0 && position < 200 ) {
 
         $('.introduce .content_area').css({top: '-100vh'});
-        $('nav').css({background: 'transparent', height:'0px'});
+        $('nav').css({position:'absolute', background: 'transparent', height:'0px'});
 
         $('.top .title_area').css({
           position: 'fixed',
@@ -27,7 +27,7 @@ $(document).ready(function (){
 
       } else if (position > 200 && position < 1200 ) {
         $('.introduce .content_area').css({top: '0vh'});
-        $('nav').css({background: 'rgba(255,255,255,0.9)', height:'100px'});
+        $('nav').css({position:'fixed', background: 'rgba(255,255,255,0.9)', height:'100px'});
         $('.top .title_area').css({
           position: 'fixed',
           margin: '0',
