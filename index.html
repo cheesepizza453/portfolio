@@ -6,84 +6,136 @@
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/slick.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <script  src="./js/jquery-3.5.1.min.js"></script>
-    <script  src="./js/slick.js"></script>
-    <script  src="./js/main.js"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="./js/main.js"></script>
   </head>
   <body>
     <div class="wrap">
-      <div class="top">
+      <section class="top">
         <div class="content_area">
-          <h1><img src="./img/logo.png" alt="logo"></h1>
-          <span class="minute">3분</span>
-          <span class="title">포트폴리오</span>
-          <span class="taste">열정맛</span>
+          <div class="title_area">
+            <h1><img src="./img/logo.png" alt="logo"></h1>
+            <span class="minute">3분</span>
+            <span class="title">포트폴리오</span>
+          </div>
+          <span data-scroll class="taste">열정맛</span>
         </div>
-        <div class="top_box"><span></span></div>
-      </div>
-      <!-- <div class="top_box"><span></span></div> -->
-      <div class="introduce">
-          <div class="content_area">
-            <div class="logo">
-              <img src="./img/logo.png" alt="logo">
-              <span class="title">포트폴리오</span>
-            </div>
-
-
-            <div class="table_wrap">
-              <p>간단 소개</p>
-
-              <table>
-                <tr>
-                  <td>이　　름</td>
-                  <td>김미리</td>
-                </tr>
-                <tr>
-                  <td>생년월일</td>
-                  <td>1994.12.09</td>
-                </tr>
-                <tr>
-                  <td>핸  드  폰</td>
-                  <td>010-4148-8670</td>
-                </tr>
-                <tr>
-                  <td>주　　소</td>
-                  <td>경기도 용인시 기흥구</td>
-                </tr>
-                <tr>
-                  <td>교　　육</td>
-                  <td>이젠아카데미 UI/UX전문가 과정(17.12~18.05)<br/>
-                  (웹 개발 전 과정에 대한 교육 및 실습)</td>
-                </tr>
-              </table>
-
-              <table>
-                <tr>
-                  <td>HTML5</td>
-                  <td>김미리</td>
-                </tr>
-                <tr>
-                  <td>CSS</td>
-                  <td>1994.12.09</td>
-                </tr>
-                <tr>
-                  <td>JavaScript</td>
-                  <td>010-4148-8670</td>
-                </tr>
-                <tr>
-                  <td>J.Query</td>
-                  <td>경기도 용인시 기흥구</td>
-                </tr>
-              </table>
-
-            </div>
-            <span class="bottom_box"></span>
+        <div class="img_area">
+            <img src="./img/coding2.jpeg" alt="타이핑 이미지">
         </div>
+      </section>
 
+      <section class="introduce">
+        <div class="top_box"></div>
+        <div class="content_area">
+          <div class="logo">
+            <!-- <img src="./img/logo.png" alt="logo"> -->
+            <span class="title">저를 소개합니다</span>
+          </div>
+          <div class="introduce_area">
+            <div class="my_pic">
+              <div class="img_circle"><img src="./img/memememe.jpg" alt="내 사진"></div>
+              <p class="txt">처음뵙겠습니다!<br>신입 <i>퍼블리셔</i> 지원자<br><b>김미리</b> 입니다</p>
+            </div>
+            <ul>
+              <li class="text_area">
+                <p class="title">기본 정보</p>
+                <p class="sub"><span>생　　　일</span>1994.12.09</p>
+                <p class="sub"><span>주　　　소</span>경기도 용인시 기흥구</p>
+                <p class="sub"><span>휴　대　폰</span>010-4148-8670</p>
+                <p class="sub"><span>메　　　일</span>miri9412@naver.com</p>
+              </li>
+              <li class="text_area skills">
+                <p class="title">업무 스킬</p>
+                <p class="sub"><span class="icon">HTML</span><b class="graph html"></b></p>
+                <p class="sub"><span class="icon">CSS</span><b class="graph css"></b></p>
+                <p class="sub"><span class="icon">JS</span><b class="graph js"></b></p>
+                <p class="sub"><span class="icon">Jqueruy</span><b class="graph jq"></b></p>
+              </li>
+              <li class="text_area">
+                <p class="title">교육 및 경력사항</p>
+                <p class="sub"><span>2017.12 ~ 2018.05</span>이젠아카데미 분당캠퍼스<span class="mobile"><br></span>UI/UX 전문가 과정 수료</p>
+                <p class="sub"><span>2019.04 ~ 2020.04</span>리노미디어 기획팀 근무</p>
+                <p class="sub"><span>2019.12 ~ 2020.03</span>그린컴퓨터아카데미 분당캠퍼스<span class="mobile"><br></span>퍼블리싱 과정 수료</p>
+                <b class="line"></b>
+              </li>
+            </ul>
+          </div>
+          <span class="bottom_box"></span>
+        </div>
+      </section>
+      <section class="slide">
+        <div class="content_area">
+          <ul>
+            <li class="cont">
+              <div class="main_img">
+                <img src="./img/pp_logo1.png" alt="처음처럼 로고">
+              </div>
+              <div class="pp_badge_area">
+                <span class="pp_badge">PC</span><span class="pp_badge">W3C통과</span><span class="pp_badge">개인제작</span>
+              </div>
+              <p class="title">처음처럼</p>
+              <p class="sub_txt">포트폴리오를 처음 시작한 페이지이기에 의미를 담아 '처음처럼' 페이지를 퍼블리싱했습니다.
+                열정은 처음처럼, 실력은 날이 다르게 상승하는 퍼블리셔가 되겠습니다!
+                <br>사용 플러그인 : AOS  / Swiper</p>
+                <a class="pf_more" href="">자세히보기</a>
+            </li>
+            <li class="cont">
+              <div class="main_img">
+                <img src="./img/pp_logo2.png" alt="용인시 로고">
+              </div>
+              <div class="pp_badge_area">
+                <span class="pp_badge">PC</span><span class="pp_badge">W3C통과</span><span class="pp_badge">개인제작</span>
+              </div>
+              <p class="title">용인시</p>
+              <p class="sub_txt">메인페이지에 많은 콘텐츠를 노출하는 사이트를 퍼블리싱하며 다양한 레이아웃 작성 경험을 키웠습니다.
+                bx slider 커스텀 시, 레이아웃 수정 뿐만 아니라 재생/일시정지 등 상세한 플러그인 커스텀 기능을 사용했습니다.
+                <br>사용 플러그인 : bx slider</p>
+                <a  class="pf_more" href="">자세히보기</a>
+            </li>
+            <li class="cont">
+              <div class="main_img">
+                <img src="./img/pp_logo3.png" alt="클리덤 로고">
+              </div>
+              <div class="pp_badge_area">
+                <span class="pp_badge">적응형</span><span class="pp_badge">W3C통과</span><span class="pp_badge">메인페이지</span>
+              </div>
+              <p class="title">클리덤 닥터락토</p>
+              <p class="sub_txt">기존 사이트는 cafe24 연동 기능을 사용하였으나 모두 퍼블리싱으로 작성했습니다.
+                하지만 데이터 연동 시 css 틀어짐을 고려하며 작업했습니다.
+                <br>사용 플러그인 : swiper</p>
+              <a  class="pf_more" href="">자세히보기</a>
+            </li>
+            <li class="cont">
+              <div class="main_img">
+                <img src="./img/pp_logo4.png" alt="오토인사이드 로고">
+              </div>
+              <div class="pp_badge_area">
+                <span class="pp_badge">PC</span><span class="pp_badge">W3C통과</span><span class="pp_badge">개인제작</span>
+              </div>
+              <p class="title">오토인사이드</p>
+              <p class="sub_txt">메인비주얼 슬라이드 내 이미지 요소에 애니메이션을 적용하는 방법을 익혀 실무에서 더 완성도 있는 페이지를 만들 수 있는 자신감이 생겼습니다!
+                <br>사용 플러그인 : swiper</p>
+              <a  class="pf_more" href="">자세히보기</a>
+            </li>
+            <li class="cont">
+              <div class="main_img">
+                <img src="./img/pp_logo5.png" alt="네이버나우 로고">
+              </div>
+              <div class="pp_badge_area">
+                <span class="pp_badge">반응형</span><span class="pp_badge">W3C통과</span><span class="pp_badge">개인제작</span>
+              </div>
+              <p class="title">네이버 나우</p>
+              <p class="sub_txt">포트폴리오 퍼블리싱 후 기존 메인페이지를 분석해보았습니다. 다양한 디바이스 환경에 최적화 하기 위한 코드 및 svg이미지 사용으로
+                보편적인 사용자 경험을 만들어낸 점이 인상깊었습니다.
+                <br>사용 플러그인 : swiper<p>
+              <a  class="pf_more" href="">자세히보기</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
-    <div class="slide">
-      
-    </div>
-
   </body>
 </html>
