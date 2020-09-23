@@ -2,6 +2,7 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>처음처럼 브랜드 페이지</title>
     <link rel="stylesheet" href="./css/reset.css" type="text/css">
     <link rel="stylesheet" href="./css/font.css" type="text/css">
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="./css/aos.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" type="text/css">
-    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
     <script type="text/javascript" src="./js/aos.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
@@ -25,7 +26,6 @@
         <div class="age_a_wrap">
           <img class="age_a_y" src="./img/age_Y.png" alt="Yes">
           <img class="age_a_n" src="./img/age_N.png" alt="No"  onclick="alert('만 19세 미만은 입장이 불가합니다.');">
-          <!--코드를 줄이고싶어 img를 감싸는 태그를 쓰지 않았는데, 개발 시 문제가 없을지 궁금하다!  -->
         </div>
       </div>
     </div>
@@ -37,7 +37,7 @@
           <h1><a href=""><img src="./img/logo.png" alt="mainlogo"></a></h1>
           <nav>
             <ul>
-              <li><a class="menu" href="#factcheck">처음처럼 FACT CHECK</a></li>
+              <li><a class="menu on" href="#factcheck">처음처럼 FACT CHECK</a></li>
                 <li><a class="menu" href="#story">처음처럼 STORY</a></li>
                   <li><a class="menu" href="#people">처음처럼 &PEOPLE</a></li>
             </ul>

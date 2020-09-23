@@ -29,13 +29,14 @@ nav ul{float:right;}
 nav li{float:left;margin-right:60px; line-height:76px;}
 nav li:last-child{margin-right:0;}
 nav ul>li>a{position:relative; height:100%; display:block; padding-left:48px; font-size:20px; font-weight:800; letter-spacing: -0.5px; -webkit-transition: 0.3s ease-in-out; transition: 0.3s ease-in-out}
+nav ul>li>a.on{color:#6eb328;}
 nav ul>li>a::before{content: ''; position:absolute; width:48px; height:28px; top:22px; left:0; background-position: 100% 100%;}
 nav ul>li:nth-child(1)>a::before{background: url(../img/nav1.png) 0 0 no-repeat;}
 nav ul>li:nth-child(2)>a::before{background: url(../img/nav2.png) 0 0 no-repeat;}
 nav ul>li:nth-child(3)>a::before{background: url(../img/nav3.png) 0 0 no-repeat;}
 nav ul>li>a:hover{color:#6eb328;}
 nav ul>li>a:hover::before{background-position: 0 -38px;}
-
+nav ul>li>a.on::before{background-position: 0 -38px;}
 
 /* 팩트01 */
 #factcheck{background-color:#f2f7f8}
