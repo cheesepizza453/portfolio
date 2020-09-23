@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>처음처럼 브랜드 페이지</title>
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/font.css" type="text/css">
+    <link rel="stylesheet" href="./css/slick.css" type="text/css">
+    <link rel="stylesheet" href="./css/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="./css/aos.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <script src="http://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/aos.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
+
+  </head>
+  <body>
+    <!-- 음주 가능 연령 질문 -->
+    <div class="age" >
+      <div>
+        <img class="age_q" src="./img/age_Q.png" alt="음주 가능 연령 질문">
+        <div class="age_a_wrap">
+          <img class="age_a_y" src="./img/age_Y.png" alt="Yes">
+          <img class="age_a_n" src="./img/age_N.png" alt="No"  onclick="alert('만 19세 미만은 입장이 불가합니다.');">
+          <!--코드를 줄이고싶어 img를 감싸는 태그를 쓰지 않았는데, 개발 시 문제가 없을지 궁금하다!  -->
+        </div>
+      </div>
+    </div>
+    <!-- 메인페이지 -->
+    <div class="main_wrap">
+      <!-- GNB -->
+      <header>
+        <div class="gnb">
+          <h1><a href=""><img src="./img/logo.png" alt="mainlogo"></a></h1>
+          <nav>
+            <ul>
+              <li><a class="menu" href="#factcheck">처음처럼 FACT CHECK</a></li>
+                <li><a class="menu" href="#story">처음처럼 STORY</a></li>
+                  <li><a class="menu" href="#people">처음처럼 &PEOPLE</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- 메인 -->
+      <main>
+        <div class="fact01 pactcheck_wrap">
+          <section id="factcheck">
+            <article>
+              <div class="container">
+                <div class="fact01_01_wrap">
+                  <img class="map_img" src="./img/map.png" alt="지도배경">
+                  <h2><img src="./img/factcheck.png" alt="팩트체크타이틀"></h2>
+                  <div class="fact01_txt">
+                    <img src="./img/fact1_txt1.png" alt="fact01" data-aos="fade-right">
+                    <img src="./img/fact1_txt2.png" alt="처음처럼은" data-aos="fade-right" data-aos-delay="300">
+                    <img src="./img/fact1_txt3.png" alt="대한민국 소주입니다." data-aos="fade-right" data-aos-delay="600" >
+                  </div>
+                  <div class="fact01_map">
+                    <img src="./img/local1.png" alt="강릉" data-aos="fade-down" data-aos-delay="1000">
+                    <img src="./img/local2.png" alt="청주" data-aos="fade-down" data-aos-delay="1300">
+                    <img src="./img/local3.png" alt="군산" data-aos="fade-down" data-aos-delay="1600">
+                  </div>
+                  <div class="fact01_soju">
+                    <img src="./img/soju.png" alt="처음처럼" data-aos="fade-up" data-aos-delay="2000">
+                  </div>
+                </div>
+
+                <div class="fact01_02_wrap aos-animate" data-aos="fade-up"  data-aos-duration="1500" >
+                  <img src="./img/fact1_100.png" alt="100%">
+                  <p class="submaintxt">'처음처럼'이 국내에서 생산되는 비율</p>
+                  <ul>
+                    <li>
+                      <img src="./img/fact1_82.png" alt="82">
+                      <p class="subtxt">롯데주류 국내 사업장 수</p>
+                    </li>
+                    <li>
+                      <img src="./img/fact1_61605.png" alt="61605">
+                      <p class="subtxt">롯데주류 국내 거래처 수</p>
+                    </li>
+                  </ul>
+                  <div class="textbox exptxt"><b>처음처럼</b>은 롯데주류의 <b>강릉, 청주, 군산 3개 공장에서 전량 제조·생산</b>되며,
+                    전국 21개 직매장과 52개 영업지점, 6만개 이상 거래처에서 활발히 유통·판매되고 있습니다. </div>
+                  <p class="textbox_sub">*2018.12기준</p>
+                </div>
+
+                <div class="fact01_03_wrap" data-aos="fade-up" >
+                  <p class="fact01_03_tit">롯데칠성음료 지분구조</p>
+                  <div class="jiboon_soju"><img src="./img/fact1_ico3.png" alt="소주형태지분그래프"></div>
+                  <div class="fact01_03_jiboon">
+                    <div class="jiboon_juju" data-aos="fade-right" data-aos-easing="ease-in-out">
+                      <p class="jiboon_tit">기타주주</p>
+                      <img src="./img/fact1_4704.png" alt="47.04%">
+                      <p class="jiboon_sub">국민연금공단<br/>해외투자자 및<br/>일반투자자</p>
+                    </div>
+                    <div class="jiboon_another" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-delay="400">
+                      <p class="jiboon_sub">롯데지주(주)<br/>롯데알미늄(주)<br/>(재)롯데장학재단<br/>(주)호텔롯데<br/>(주)롯데홀딩스</p>
+                      <p class="jiboon_tit">특수관계인</p>
+                      <img src="./img/fact1_5296.png" alt="52.96%">
+                    </div>
+                </div>
+                  <div class="textbox exptxt"><b>처음처럼</b>을 제조하는 롯데주류가 속한 롯데칠성음료(주)는 1975년 국내 증시에 상장한 <b>대한민국 기업</b>으로
+                    수입맥주 판매 법인인 '롯데아사히주류'는 별도의 법인입니다.'
+                  </div>
+                  <p class="textbox_sub">*2019년 2/4분기 DART 공시, 단일 보통주 기준</p>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="container">
+                <div class="fact02_01_wrap">
+                  <div class="fact02_txt">
+                    <img src="./img/fact2_txt1.png" alt="fact01" data-aos="fade-right">
+                    <img src="./img/fact2_txt2.png" alt="처음처럼은" data-aos="fade-right" data-aos-delay="300">
+                    <img src="./img/fact2_txt3.png" alt="대한민국 경제에" data-aos="fade-right" data-aos-delay="600">
+                    <img src="./img/fact2_txt4.png" alt="기여합니다." data-aos="fade-right" data-aos-delay="900">
+                  </div>
+                  <div class="fact02_exp" data-aos="fade-up" data-aos-delay="1200">
+                    <img src="./img/fact2_14011.png" alt="14011">
+                    <p class="submaintxt">'처음처럼'이 대한민국에서 창출한 <b>일자리 수</b></p>
+                    <ul>
+                      <li class="subtxt"><img src=./img/fact2_1801.png alt="1801">직접 고용으로 창출된 <b>국내 일자리 수</b></li>
+                      <li class="subtxt"><img src=./img/fact2_7220.png alt="7220">제조, 유통, 영업 등을 통해 창출된 <b>국내 일자리 수</b></li>
+                      <li class="subtxt"><img src=./img/fact2_4990.png alt="4990">협력업체를 통해 창출된 <b>국내 일자리 수</b></li>
+                    </ul>
+                  </div>
+                  <div class="textbox exptxt"><b>처음처럼</b>을 만드는 롯데주류는 직·간접고용으로 <b>대한민국 일자리를 창출</b>하고, 협력업체 및 거래처와의 상생경영을 통해 경제 활성화 노력을 다하고 있습니다.
+                  </div>
+                  <p class="textbox_sub">*2018.12 연간 합계 인원 기준</p>
+                  <div class="fact02_graph">
+                    <img src="./img/graph.png" alt="그래프">
+                    <div class="graph_bg"></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="container">
+                <div class="fact_03_wrap">
+                  <div class="fact03_txt">
+                    <img src="./img/fact3_txt1.png" alt="fact03" data-aos="fade-right">
+                    <img src="./img/fact3_txt2.png" alt="처음처럼" data-aos="fade-right" data-aos-delay="300">
+                    <img src="./img/fact3_txt3.png" alt="판매 수익은" data-aos="fade-right" data-aos-delay="600">
+                    <img src="./img/fact3_txt4.png" alt="국내에 환원됩니다." data-aos="fade-right" data-aos-delay="900">
+                  </div>
+                  <div class="fact03_bg">
+                    <img src="./img/fact3_bg.png" alt="배경이미지">
+                  </div>
+                  <div class="fact03_13000" data-aos="fade-up">
+                    <img src="./img/fact3_13000.png" alt="13000">
+                    <p class="submaintxt">'처음처럼' 숲에 심은 나무 수</p>
+                    <ul class="fact03_13000_sub">
+                      <li class="subtxt"><img src="./img/fact3_848.png" alt="848">연간 이산화탄소 흡수량</li>
+                      <li class="subtxt"><img src="./img/fact3_209.png" alt="209">연간 미세먼지 흡수량</li>
+                    </ul>
+                  </div>
+                  <ul class="fact03_gall">
+                    <li class="subtxt" data-aos="fade-up" data-aos-delay="300"><img src="./img/fact3_news1.png" alt="처음처럼 브랜드 숲 사진"><p>처음처럼 브랜드 숲 조성</p>2018년 4월~현재</li>
+                    <li class="subtxt" data-aos="fade-up" data-aos-delay="300"><img src="./img/fact3_news2.png" alt="지역 사회공헌 활동 사진"><p>지역 사회공헌 활동</p>1999년~현재</li>
+                  </ul>
+                  <div class="textbox exptxt"><b>처음처럼</b>을 만드는 롯데주류는 친환경 CSR, 지역 축제 지원, 복지단체 기부, 장학금 기탁 등 다양한 활동을 통해 <b>기업의 사회적 책임</b>을 다하고 있습니다.
+                  </div>
+                  <p class="textbox_sub">*처음처럼 1~3호 숲 합계 기준</p>
+                </div>
+              </div>
+            </article>
+          </section>
+          <section id="story">
+            <article>
+              <div class="container_story">
+                <div class="story01_wrap">
+                  <div class="width1200">
+                  <img src="./img/story.png" alt="스토리">
+                    <div class="story01_video" data-aos="fade-up">
+                      <iframe width="1200" height="600" src="https://www.youtube.com/embed/LgqkyeJM5wM" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                    </div>
+                    <div class="story01_birth">
+                      <img src="./img/history_tit.png" alt="처음처럼 탄생 스토리" data-aos="fade right" data-aos-delay="300">
+                      <p class="submaintxt" data-aos="fade-up" data-aos-delay="600"><b>'처음처럼'</b>은 강원도 <b>'경월'</b> 소주로 출발, 대한민국 초록색 소주병의 시초 <b>'그린'</b>과 강원도를<br/>
+                            상징하는 <b>'산'</b>소주를 이은 대한민국 소주 역사의 한 주축을 담당해 온<br/> <b>'대한민국 소주 브랜드'</b> 입니다.
+                      </p>
+                  </div>
+                </div>
+                </div>
+                <div class="story02_wrap">
+                  <div class="width1200">
+                    <img src="./img/story_tit.png" alt="브랜드스토리" data-aos="fade-left">
+                    <div class="story02_text" data-aos="fade-up" data-aos-delay="300">
+                      <p>의 <b>이름</b>은 다시 새날을 시작하자는 용기와</p>
+                      희망을 불어넣어 주는 신영복 교수의 시, ‘처음처럼’에서<br/>
+                      영감을 얻어 언제나 초심을 잃지 않고 힘찬 삶을 살자는<br/>
+                      의미를 담고 있습니다.
+                    </div>
+                    <div class="story02_img" data-aos="fade-up" data-aos-delay="300">
+                      <img src="./img/logo_txt.png" alt="처음처럼 로고">
+                    </div>
+                </div>
+                </div>
+                <div class="prize_wrap">
+                  <img src="./img/prize_tit.png" alt="처음처럼 수상" data-aos="fade-left">
+                  <div class="prize_slide slick-items" data-aos="fade-up" data-aos-delay="300">
+                    <div><img src="./img/prize_img1.jpg" alt="수상이미지1"><p class="slide_text"><b>소비자 고객만족도</b> (NCSI) 소주부문 1위<br/>4년, 6년 연속(16년~19년, 08년~13년)</p></div>
+                    <div><img src="./img/prize_img2.jpg" alt="수상이미지2"><p class="slide_text"><b>대한민국 주류대상</b> 소주부문 19년</p></div>
+                    <div><img src="./img/prize_img3.jpg" alt="수상이미지3"><p class="slide_text"><b>2018 대한민국 광고대상</b><br/>프로모션 부문 대상, 디자인 부문 은상<br/>처음처럼 마이라벨 캠페인</div>
+                    <div><img src="./img/prize_img4.jpg" alt="수상이미지4"><p class="slide_text"><b>인터넷소통 대상·소셜미디어 대상</b><br/>기업부문 대상(처음처럼) 18년</p></div>
+                  </div>
+                </div>
+                <div class="certify_wrap">
+                  <img src="./img/certify_tit.png" alt="처음처럼 인증" data-aos="fade-left" data-aos-delay="300">
+                  <div class="certify_slide slick-items" data-aos="fade-up" data-aos-delay="600">
+                      <div><img src="./img/certify_img1.jpg" alt="인증이미지1"><p class="slide_text"><b>청주공장</b>(16년), <b>강릉.군산공장</b>(15년)<br/>식품안전인증(FSSC22000) 획득</p></div>
+                      <div><img src="./img/certify_img2.jpg" alt="인증이미지2"><p class="slide_text"><b>청주공장</b>(16년), <b>강릉.군산공장</b>(14년)<br/>식품위해요소 중점관리 인증(HACCP)</p></div>
+                      <div><img src="./img/certify_img3.jpg" alt="인증이미지3"><p class="slide_text"><b>강릉.군산공장</b> 환경경영체제<br/>국제표준 인증(ISO14001) 획득 08년</p></div>
+                      <div><img src="./img/certify_img4.jpg" alt="인증이미지4"><p class="slide_text"><b>강릉.군산공장</b> 품질경영시스템<br/>인증(ISO9001) 획득 06년</div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+          <section id="people">
+            <article>
+              <div class="container">
+                <img  class="tit" src=./img/people.png alt="피플">
+                <img  class="subtit" src=./img/people_tit.png alt="처음처럼 피플" data-aos="fade-left">
+                <div class="video people_video01" data-aos="fade-up" data-aos-delay="300">
+                  <a class="videolink video0" href="javascript:void(0)" onclick="callFunction()"><img src="./img/thumb.png" alt="영상1"></a>
+                  <p>[열혈 영업! 윤상씨의 발로 뛰는 VLOG]</p>
+                </div>
+                <div class="video people_video02" data-aos="fade-up" data-aos-delay="300">
+                  <a class="videolink video1" href="javascript:void(0)" onclick="callFunction()"><img src="./img/thumb3.jpg" alt="영상2"></a>
+                  <p>[영업의 정석! 유꽃비 팀장의 워킹맘 VLOG]</p>
+                </div>
+                <div class="video people_video03" data-aos="fade-up" data-aos-delay="300">
+                  <a class="videolink video2" href="javascript:void(0)" onclick="callFunction()"><img src="./img/thumb4_1.jpg" alt="영상3"></a>
+                  <p>[처음처럼 만드니까]</p>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </main>
+
+    <footer>
+      <div class="container">
+        <img src="./img/foot_txt.png" alt="롯데주류 임직원 일동">
+        <ul class="sns">
+            <li><a href="https://www.facebook.com/firstsoju/" target="_blank" ><img src="./img/ico_fb.png" alt="페이스북 바로가기"></a></li>
+            <li><a href="https://www.instagram.com/firstsoju/?hl=ko" target="_blank" ><img src="./img/ico_insta.png" alt="인스타그램 바로가기"></a></li>
+            <li><a href="https://firstsoju.com" target="_blank" ><img src="./img/ico_nb.png" alt="네이버 블로그 바로가기"></a></li>
+            <li><a href="https://www.youtube.com/user/lotteLiquorBG" target="_blank"><img src="./img/ico_youtube.png" alt="유튜브 바로가기"></a></li>
+        </ul>
+        <img src="./img/copyright.png" alt="copyright">
+      </div>
+    </footer>
+
+  </div>
+  <div class="video_popup" style="display: none">
+    <a class="close_btn"><img src="./img/close.png" alt="닫기버튼"></a>
+    <div>
+      <div class="video_container">
+        <iframe id="play_video" src="https://www.youtube.com/" width="1200" height="600" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

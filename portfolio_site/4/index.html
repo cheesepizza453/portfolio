@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>오토인사이드</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="https://kit.fontawesome.com/4ba66d0d1b.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="main_wrap">
+      <header>
+        <div class="header_top_wrap">
+            <div class="width1280">
+            <ul class="page_link_area">
+              <li class="page_link active"><a href="#"><b>오토인사이드</b> 원클릭 내차팔기</a></li>
+              <li class="page_link"><a href="#"><b>온라인 경쟁입찰</b> 자동차 경매 서비스</a></li>
+            </ul>
+            <ul class="service_area">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_logo_line_wrap">
+          <div class="width1280">
+            <h2><a href="#"><img src="./img/ai_logo.png" alt="오토인사이드로고"></a></h2>
+            <div class="search_area">
+              <input class="main_search" id="main_search" type="text" name="검색" value="" placeholder="18만명이 선택한 오토인사이드 내차팔기">
+              <a href="#"><img src="./img/icon_search.png" alt="검색버튼"></a>
+            </div>
+            <div class="mypage_area">
+              <a href="#"><img src="./img/icon_mypage.png" alt="마이페이지 바로가기"><p>마이페이지</p></a>
+            </div>
+            <a class="hy_quick_link" href="#"><img src="./img/out_banner_01.gif" alt="현대인증중고차 바로가기"></a>
+          </div>
+
+        </div>
+        <nav>
+          <div class="width1280">
+            <ul class="nav_menu_area">
+              <li><a href="#">내차팔기</a></li>
+              <li><a href="#">내차사기</a></li>
+              <li><a href="#">생생후기</a></li>
+              <li><a href="#">이벤트</a></li>
+              <li><a href="#">오토뉴스</a></li>
+            </ul>
+            <a class="hamburger_btn" href="#"><img src="./img/icon_menu_01.png" alt="전체메뉴 보기"></a>
+            <div class="all_menu_wrap">
+              <a class="all_menu_close_btn" href="#"><img src="./img/all_menu_close.gif" alt="전체메뉴 닫기"></a>
+              <ul>
+                <li class="division_menu_area">
+                  <ul>
+                    <li><p class="all_1depth">오토인사이드</p></li>
+                    <li class="all_2-3depth_wrap">
+                      <ul>
+                        <li class="all_2depth"><a href="#">내차팔기</a></li>
+                        <li class="all_3depth"><a href="#">간편신청</a></li>
+                        <li class="all_3depth"><a href="#">나의 신청현황</a></li>
+                        <li class="all_3depth"><a href="#">실시간 신청현황</a></li>
+                        <li class="all_3depth"><a href="#">중고차 판매시세</a></li>
+                        <li class="all_3depth"><a href="#">내차 직접 등록</a></li>
+                      </ul>
+                    </li>
+                    <li class="all_2-3depth_wrap">
+                      <ul>
+                        <li class="all_2depth"><a href="#">내차사기</a></li>
+                        <li class="all_3depth"><a href="#">국산차</a></li>
+                        <li class="all_3depth"><a href="#">수입차</a></li>
+                        <li class="all_3depth"><a href="#">화물/특장/버스</a></li>
+                        <li class="all_3depth"><a href="#">테마검색</a></li>
+                      </ul>
+                    </li>
+                    <li class="all_2-3depth_wrap">
+                      <ul>
+                        <li class="all_2depth"><a href="#">생생후기</a></li>
+                        <li class="all_3depth"><a href="#">국산차</a></li>
+                        <li class="all_3depth"><a href="#">수입차</a></li>
+                      </ul>
+                    </li>
+                    <li class="all_2-3depth_wrap">
+                      <ul>
+                        <li class="all_2depth"><a href="#">이벤트</a></li>
+                        <li class="all_3depth"><a href="#">진행중인 이벤트</a></li>
+                        <li class="all_3depth"><a href="#">당첨자 발표</a></li>
+                      </ul>
+                    </li>
+                    <li class="all_2-3depth_wrap">
+                      <ul>
+                        <li class="all_2depth"><a href="#">오토뉴스</a></li>
+                        <li class="all_3depth"><a href="#">오토뉴스</a></li>
+                        <li class="all_3depth"><a href="#">오토라이프</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="division_menu_area">
+                  <ul>
+                    <li><p class="all_1depth">온라인경쟁입찰</p></li>
+                    <li class="all_2-3depth_wrap">
+                      <ul>
+                        <li class="all_2depth"><a href="#">진행/대기차량</a></li>
+                        <li class="all_2depth"><a href="#">종료차량</a></li>
+                        <li class="all_2depth"><a href="#">나의 입찰내역</a></li>
+                        <li class="all_2depth"><a href="#">온라인 경공매 안내</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="division_menu_area">
+                  <ul>
+                    <li><p class="all_1depth">일반</p></li>
+                    <li class="all_2-3depth_wrap">
+                      <ul>
+                        <li class="all_2depth"><a href="#">고객센터</a></li>
+                        <li class="all_3depth"><a href="#">자주하는 질문</a></li>
+                        <li class="all_3depth"><a href="#">사이트 이용문의</a></li>
+                        <li class="all_3depth"><a href="#">자료실</a></li>
+                      </ul>
+                    </li>
+                    <li class="all_2-3depth_wrap">
+                      <ul>
+                        <li class="all_2depth"><a href="#">정책 및 공지</a></li>
+                        <li class="all_3depth"><a href="#">이용약관</a></li>
+                        <li class="all_3depth"><a href="#">개인정보처리방침</a></li>
+                        <li class="all_3depth"><a href="#">공지사항</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+        <section class="visual_wrap">
+          <h4>메인비주얼영역</h4>
+          <div class="visual_area">
+            <div class="visual02 visual_img">
+              <a href="#">
+                <img src="./img/main_bg_02.jpg" alt="원클릭 내차팔기 배경">
+                <img class="mainb_gb_2 mainb_gb_2-1" src="./img/2-1.png" alt="원클릭 내차팔기 이미지1">
+                <img class="mainb_gb_2 mainb_gb_2-2" src="./img/2-2.png" alt="원클릭 내차팔기 이미지2">
+              </a>
+            </div>
+            <div class="visual03 visual_img">
+              <a href="#">
+                <img src="./img/main_bg_03.jpg" alt="원클릭 내차팔기 배경">
+                <img class="mainb_gb_3 mainb_gb_3-1" src="./img/3-1.png" alt="원클릭 내차팔기 이미지1">
+                <img class="mainb_gb_3 mainb_gb_3-2" src="./img/3-2.png" alt="원클릭 내차팔기 이미지2">
+                <img class="mainb_gb_3 mainb_gb_3-3" src="./img/3-3.png" alt="원클릭 내차팔기 이미지2">
+              </a>
+            </div>
+            <div class="visual04 visual_img">
+              <a href="#">
+                <img src="./img/main_bg_04.jpg" alt="원클릭 내차팔기 배경">
+                <img class="mainb_gb_4 mainb_gb_4-1" src="./img/4-1.png" alt="원클릭 내차팔기 이미지1">
+                <img class="mainb_gb_4 mainb_gb_4-2" src="./img/4-2.png" alt="원클릭 내차팔기 이미지2">
+                <img class="mainb_gb_4 mainb_gb_4-3" src="./img/4-3.png" alt="원클릭 내차팔기 이미지2">
+                <img class="mainb_gb_4 mainb_gb_4-4" src="./img/4-4.png" alt="원클릭 내차팔기 이미지2">
+                <img class="mainb_gb_4 mainb_gb_4-5" src="./img/4-5.png" alt="원클릭 내차팔기 이미지2">
+              </a>
+            </div>
+          </div>
+          <article class="sell_request_wrap">
+            <ul>
+              <li class="division_request_area">
+                <img src="./img/icon_sellMyCar.png" alt="신청영역 안내 아이콘">
+                <div class="request_title_area">
+                  <h3>내차팔기 간편신청</h3>
+                  <span>간단한 정보를 입력하면<br/>신청완료됩니다.</span>
+                </div>
+              </li>
+              <li class="division_request_area">
+                <p>이름</p>
+                <input id="selling_name" type="text" name="신청자이름" placeholder="홍길동">
+              </li>
+              <li class="division_request_area">
+                <p>연락처</p>
+                <input id="selling_phone" type="text" name="신청자전화번호" placeholder="01012345678">
+              </li>
+              <li class="division_request_area">
+                <p>차량번호</p>
+                <input id="selling_car_number" type="text" placeholder="12가3456">
+              </li>
+              <li class="division_request_area">
+                <div><input id="selling_agreement_personal_data" type="checkbox" name="개인정보수집동의" value=""><span>개인정보 수집동의</span><a href="#">(필수)</a></div>
+                <div><input id="selling_request_marketing" type="checkbox" name="마케팅수신동의" value=""><span>마케팅 수신동의(선택)</span></div>
+                <button type="button" name="button">간편신청</button>
+              </li>
+            </ul>
+          </article>
+        </section>
+
+      <article class="right_quicklink_wrap">
+        <h4>우측 퀵메뉴</h4>
+        <a href=""><img src="./img/banner_nvp.png" alt="네이버포스트보러가기"></a>
+        <a href=""><img src="./img/banner_kakao.jpg" alt="카카오일대일상담"></a>
+        <a href="">
+          <div class="circle"><span>?</span><i class="circle_triangle"></i></div>
+          <p class="circle_text">내차팔기<br/>신청현황</p>
+        </a>
+      </article>
+
+      <section class="top_banner_wrap">
+        <div class="width1280">
+          <ul>
+            <li class="">
+              <a href="#">
+                <img src=./img/icon_info_01.png alt="판매 차량 수 안내 이미지">
+                <p class="selling_cars">182,198</p>
+                <span>내차팔기 판매(2007~)</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="#">
+                <img src=./img/icon_info_02.png alt="상담 진행 수 안내 이미지">
+                <p class="selling_cars">28</p>
+                <span>상담 진행중</span>
+              </a>
+            </li>
+            <li class="">
+              <a href="#">
+                <img src=./img/icon_info_03.png alt="이 달의 경쟁률 안내 이미지">
+                <p class="selling_cars">77:1</p>
+                <span>이 달의 최고 경쟁률</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="reivew_slide_wrap">
+        <div class="width1280">
+          <h2 class="title">고마워요, 오토인사이드</h2>
+          <p class="sub_text">오토인사이드 내차팔기와 함께한 고객님들의 후기를 확인해보세요!</p>
+          <a class="review_see see_more" href="#">더보기 +</a>
+          <div class="review_slide_area">
+            <div class="review_area">
+              <a href="">
+                <div class="circle_image_wrap"><img class="review_car_image" src="./img/review_car1.jpg" alt="자동차 이미지"></div>
+                <div class="best_bage_area"><img class="best_badge" src="./img/reviewBest.png" alt="베스트"></div>
+                <span class="review_badge badge_price">PRICE</span>
+                <p class="review_contents">빠르고 좋아요. 감정사님도 좋으시고요.</p>
+                <p class="car_name">[제네시스] G70</p>
+                <span class="consumer_name">"이"호<b>님</b></span>
+                <span class="review_date">2020-08-26</span>
+              </a>
+            </div>
+
+            <div class="review_area">
+              <a href="">
+                <div class="circle_image_wrap"><img class="review_car_image" src="./img/review_car2.jpg" alt="자동차 이미지"></div>
+                <span class="review_badge badge_price">PRICE</span>
+                <p class="review_contents">친절한 상담과 빠른 경매 만족합니다.</p>
+                <p class="car_name">[기아] 뉴 스포티지 2010년식</p>
+                <span class="consumer_name">"오"배<b>님</b></span>
+                <span class="review_date">2020-08-22</span>
+              </a>
+            </div>
+
+            <div class="review_area">
+              <a href="">
+                <div class="circle_image_wrap"><img class="review_car_image" src="./img/review_car3.jpg" alt="자동차 이미지"></div>
+                <div class="best_bage_area"><img class="best_badge" src="./img/reviewBest.png" alt="베스트"></div>
+                <span class="review_badge badge_price">PRICE</span>
+                <p class="review_contents">고객센터 문의시 친절한 안내로 빠른 매매와 매매가격이 괜찮아 좋았습니다.</p>
+                <p class="car_name">[현대] 그랜저 IG HEV 2018년식</p>
+                <span class="consumer_name">"송"호<b>님</b></span>
+                <span class="review_date">2020-08-12</span>
+              </a>
+            </div>
+
+            <div class="review_area">
+              <a href="">
+                <div class="circle_image_wrap"><img class="review_car_image" src="./img/review_car4.jpg" alt="자동차 이미지"></div>
+                <div class="best_bage_area"><img class="best_badge" src="./img/reviewBest.png" alt="베스트"></div>
+                <span class="review_badge badge_price">PRICE</span>
+                <p class="review_contents">친절합니다.</p>
+                <p class="car_name">[현대] 투싼</p>
+                <span class="consumer_name">"김"화<b>님</b></span>
+                <span class="review_date">2020-08-11</span>
+              </a>
+            </div>
+
+            <div class="review_area">
+              <a href="">
+                <div class="circle_image_wrap"><img class="review_car_image" src="./img/review_car5.jpg" alt="자동차 이미지"></div>
+                <span class="review_badge badge_price">PRICE</span>
+                <p class="review_contents">일처리가 빠릅니다</p>
+                <p class="car_name">[아우디] A4</p>
+                <span class="consumer_name">"진"걸<b>님</b></span>
+                <span class="review_date">2020-08-10</span>
+              </a>
+            </div>
+
+            <div class="review_area">
+              <a href="">
+                <div class="circle_image_wrap"><img class="review_car_image" src="./img/review_car6.jpg" alt="자동차 이미지"></div>
+                <span class="review_badge badge_price">PRICE</span>
+                <p class="review_contents">만족합니다.</p>
+                <p class="car_name">[현대] 산타페DM</p>
+                <span class="consumer_name">"진"걸<b>님</b></span>
+                <span class="review_date">2020-08-10</span>
+              </a>
+            </div>
+
+            <div class="review_area">
+              <a href="">
+                <div class="circle_image_wrap"><img class="review_car_image" src="./img/review_car7.jpg" alt="자동차 이미지"></div>
+                <span class="review_badge badge_price">PRICE</span>
+                <p class="review_contents">감정 가격이 높고 빠르고 투명합니다.</p>
+                <p class="car_name">[기아] 뉴모닝</p>
+                <span class="consumer_name">"한"정<b>님</b></span>
+                <span class="review_date">2020-08-10</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sold_out_slide_wrap">
+        <div class="width1280">
+          <h2 class="title">내차팔기 완료 차량</h2>
+          <p class="sub_text">오토인사이드 온라인경쟁입찰을 통해 낙찰된 차량을 살펴보세요!</p>
+          <a class="sold_see see_more" href="#">더보기 +</a>
+          <div class="sold_out_slide_area">
+            <div class="sold_out_area">
+              <a href="">
+                <div class="sold_image_wrap"><img class="sold_car_image" src="./img/sold_car1.jpg" alt="자동차 이미지"></div>
+                <p class="sold_car_name">뉴 모닝</p>
+                <p class="sold_car_spec">1.0 가솔린 프레스티지</p>
+                <img class="nakchal_icon" src="./img/ico_auc_end.gif" alt="낙찰 아이콘">
+                <ul class="car_info">
+                  <li>
+                    <ul>
+                      <li class="sold_price_area"><span class="sold_price">380</span><span>만원</span></li>
+                      <li class="sold_year_area"><span class="sole_year">2016</span><span>년</span></li>
+                      <li class="sold_sub_info">기타</li>
+                      <li class="sold_accident">사고무</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li class="sold_competition_rate_area"><span class="sold_competition_rate">12:1</span><span>경쟁률</span></li>
+                      <li class="sold_out_date">2020.08.29</li>
+                      <li class="sold_km_area"><span class="sold_km">112,466</span><span>km</span></li>
+                      <li class="sold_center_area"><span class="sold_center">용인</span><span>센터</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </a>
+            </div>
+
+            <div class="sold_out_area">
+              <a href="">
+                <div class="sold_image_wrap"><img class="sold_car_image" src="./img/sold_car2.jpg" alt="자동차 이미지"></div>
+                <p class="sold_car_name">봉고3 특장</p>
+                <p class="sold_car_spec">1톤 활어수송차</p>
+                <img class="nakchal_icon" src="./img/ico_auc_end.gif" alt="낙찰 아이콘">
+                <ul class="car_info">
+                  <li>
+                    <ul>
+                      <li class="sold_price_area"><span class="sold_price">822</span><span>만원</span></li>
+                      <li class="sold_year_area"><span class="sole_year">2015</span><span>년</span></li>
+                      <li class="sold_sub_info">기타</li>
+                      <li class="sold_accident">사고무</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li class="sold_competition_rate_area"><span class="sold_competition_rate">77:1</span><span>경쟁률</span></li>
+                      <li class="sold_out_date">2020.08.26</li>
+                      <li class="sold_km_area"><span class="sold_km">82,466</span><span>km</span></li>
+                      <li class="sold_center_area"><span class="sold_center">인천</span><span>센터</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </a>
+            </div>
+
+            <div class="sold_out_area">
+              <a href="">
+                <div class="sold_image_wrap"><img class="sold_car_image" src="./img/sold_car3.jpg" alt="자동차 이미지"></div>
+                <p class="sold_car_name">더 넥스트 스파크</p>
+                <p class="sold_car_spec">2.2플러스</p>
+                <img class="nakchal_icon" src="./img/ico_auc_end.gif" alt="낙찰 아이콘">
+                <ul class="car_info">
+                  <li>
+                    <ul>
+                      <li class="sold_price_area"><span class="sold_price">526</span><span>만원</span></li>
+                      <li class="sold_year_area"><span class="sole_year">2016</span><span>년</span></li>
+                      <li class="sold_sub_info">기타</li>
+                      <li class="sold_accident">사고무</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li class="sold_competition_rate_area"><span class="sold_competition_rate">12:1</span><span>경쟁률</span></li>
+                      <li class="sold_out_date">2020.08.25</li>
+                      <li class="sold_km_area"><span class="sold_km">712,466</span><span>km</span></li>
+                      <li class="sold_center_area"><span class="sold_center">용인</span><span>센터</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </a>
+            </div>
+
+            <div class="sold_out_area">
+              <a href="">
+                <div class="sold_image_wrap"><img class="sold_car_image" src="./img/sold_car4.jpg" alt="자동차 이미지"></div>
+                <p class="sold_car_name">뉴 라보</p>
+                <p class="sold_car_spec">0.8 LPi DLX</p>
+                <img class="nakchal_icon" src="./img/ico_auc_end.gif" alt="낙찰 아이콘">
+                <ul class="car_info">
+                  <li>
+                    <ul>
+                      <li class="sold_price_area"><span class="sold_price">355</span><span>만원</span></li>
+                      <li class="sold_year_area"><span class="sole_year">2017</span><span>년</span></li>
+                      <li class="sold_sub_info">흰색</li>
+                      <li class="sold_accident">사고무</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li class="sold_competition_rate_area"><span class="sold_competition_rate">112:1</span><span>경쟁률</span></li>
+                      <li class="sold_out_date">2020.08.20</li>
+                      <li class="sold_km_area"><span class="sold_km">82,466</span><span>km</span></li>
+                      <li class="sold_center_area"><span class="sold_center">천안</span><span>센터</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </a>
+            </div>
+
+            <div class="sold_out_area">
+              <a href="">
+                <div class="sold_image_wrap"><img class="sold_car_image" src="./img/sold_car5.jpg" alt="자동차 이미지"></div>
+                <p class="sold_car_name">더 뉴 K9</p>
+                <p class="sold_car_spec">3.3 이그제큐티브지</p>
+                <img class="nakchal_icon" src="./img/ico_auc_end.gif" alt="낙찰 아이콘">
+                <ul class="car_info">
+                  <li>
+                    <ul>
+                      <li class="sold_price_area"><span class="sold_price">1,820</span><span>만원</span></li>
+                      <li class="sold_year_area"><span class="sole_year">2017</span><span>년</span></li>
+                      <li class="sold_sub_info">검정색</li>
+                      <li class="sold_accident">사고무</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li class="sold_competition_rate_area"><span class="sold_competition_rate">12:1</span><span>경쟁률</span></li>
+                      <li class="sold_out_date">2020.08.19</li>
+                      <li class="sold_km_area"><span class="sold_km">92,466</span><span>km</span></li>
+                      <li class="sold_center_area"><span class="sold_center">용인</span><span>센터</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </a>
+            </div>
+            <div class="sold_out_area">
+              <a href="">
+                <div class="sold_image_wrap"><img class="sold_car_image" src="./img/sold_car6.jpg" alt="자동차 이미지"></div>
+                <p class="sold_car_name">그랜드스타렉스 밴</p>
+                <p class="sold_car_spec">2.5 디젤 밴 스마트 3인승</p>
+                <img class="nakchal_icon" src="./img/ico_auc_end.gif" alt="낙찰 아이콘">
+                <ul class="car_info">
+                  <li>
+                    <ul>
+                      <li class="sold_price_area"><span class="sold_price">1,100</span><span>만원</span></li>
+                      <li class="sold_year_area"><span class="sole_year">2016</span><span>년</span></li>
+                      <li class="sold_sub_info">검정색</li>
+                      <li class="sold_accident">사고무</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li class="sold_competition_rate_area"><span class="sold_competition_rate">112:1</span><span>경쟁률</span></li>
+                      <li class="sold_out_date">2020.08.18</li>
+                      <li class="sold_km_area"><span class="sold_km">72,466</span><span>km</span></li>
+                      <li class="sold_center_area"><span class="sold_center">천안</span><span>센터</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </a>
+            </div>
+            <div class="sold_out_area">
+              <a href="">
+                <div class="sold_image_wrap"><img class="sold_car_image" src="./img/sold_car7.jpg" alt="자동차 이미지"></div>
+                <p class="sold_car_name">XF</p>
+                <p class="sold_car_spec">2.2D 럭셔리</p>
+                <img class="nakchal_icon" src="./img/ico_auc_end.gif" alt="낙찰 아이콘">
+                <ul class="car_info">
+                  <li>
+                    <ul>
+                      <li class="sold_price_area"><span class="sold_price">1,500</span><span>만원</span></li>
+                      <li class="sold_year_area"><span class="sole_year">2014</span><span>년</span></li>
+                      <li class="sold_sub_info">검정색</li>
+                      <li class="sold_accident">사고무</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul>
+                      <li class="sold_competition_rate_area"><span class="sold_competition_rate">32:1</span><span>경쟁률</span></li>
+                      <li class="sold_out_date">2020.08.18</li>
+                      <li class="sold_km_area"><span class="sold_km">72,466</span><span>km</span></li>
+                      <li class="sold_center_area"><span class="sold_center">천안</span><span>센터</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="buy_mycar_wrap">
+        <a href="#"><img src="./img/sub_bg_01.jpg" alt="내차사기 바로가기"></a>
+      </section>
+      <section class="buy_safe_car_wrap">
+        <h4>안전 인증 판매 차량</h4>
+        <div class="width1280">
+          <ul class="safe_car_menu_area">
+            <li class="safe_car_menu active">현대캐피탈 인증중고차</li>
+            <li class="safe_car_menu">안심매매상사 차량</li>
+          </ul>
+          <ul>
+            <li class="safe_car_list_wrap active">
+              <div>
+                <ul class="safe_car_list_area hyundai_capital_area active">
+                  <li><p class="sub_text">국내 최초로 금융회사가 엄격하게 인증한 현대캐피탈 인증중고차</p>
+                  <a class="see_more" href="#">더보기 +</a></li>
+                  <li class="safe_car_list">
+                    <div class="img_wrap"><a href="#"><img src="./img/hd_safe_car1.jfif" alt="현대캐피탈 인증중고차 차량 이미지"></a></div>
+                    <p class="car_name">[현대] 아반떼AD 1.6 가솔린 밸류 플러스</p>
+                    <div class="safe_car_price_area"><span class="safe_car_price">1,420</span><span>만원</span></div>
+                    <div class="safe_car_liss_price_area"><span>(리스 월 </span><span class="safe_car_liss_prics">21</span><span>만원)</span></div>
+                  </li>
+                  <li class="safe_car_list">
+                    <div class="img_wrap"><a href="#"><img src="./img/hd_safe_car2.jfif" alt="현대캐피탈 인증중고차 차량 이미지"></a></div>
+                    <p class="car_name">[현대] LF쏘나타 1.7 e-VGT 스타일</p>
+                    <div class="safe_car_price_area"><span class="safe_car_price">970</span><span>만원</span></div>
+                    <div class="safe_car_liss_price_area"><span>(별도상담)</span></div>
+                  </li>
+                  <li class="safe_car_list">
+                    <div class="img_wrap"><a href="#"><img src="./img/hd_safe_car3.jfif" alt="현대캐피탈 인증중고차 차량 이미지"></a></div>
+                    <p class="car_name">[제네시스] G80 3.8 GDI AWD 프레스티지</p>
+                    <div class="safe_car_price_area"><span class="safe_car_price">3,080</span><span>만원</span></div>
+                    <div class="safe_car_liss_price_area"><span>(별도상담)</span></div>
+                  </li>
+                </ul>
+                <ul class="safe_car_list_area ansim_buy_area">
+                  <li><p class="sub_text">현대캐피탈과 제휴하여 안심하고 구매하실 수 있도록 다양한 혜택을 제공하는 중고차 판매점의 중고차량</p>
+                  <a class="see_more" href="#">더보기 +</a></li>
+                  <li class="safe_car_list">
+                      <div class="img_wrap"><a href="#"><img src="./img/ansim_car1.jpg" alt="안심매매상사차량 이미지"></a></div>
+                      <p class="car_name">[현대]스타렉스 2.5 디젤 2WD 스마트 12인승</p>
+                      <div class="ansim_badge"><span>방문예약</span><span>저금리</span></div>
+                      <div class="safe_car_price_area">
+                        <span class="safe_car_price">1,350</span><span>만원</span>
+                      </div>
+                  </li>
+                  <li class="safe_car_list">
+                      <div class="img_wrap"><a href="#"><img src="./img/ansim_car2.jpg" alt="안심매매상사차량 이미지"></a></div>
+                      <p class="car_name">[현대]싼타페 싼타페 더 프라임 2.0 디젤 2WD...</p>
+                      <div class="ansim_badge"><span>방문예약</span><span>저금리</span></div>
+                      <div class="safe_car_price_area">
+                        <span class="safe_car_price">1,590</span><span>만원</span>
+                      </div>
+                  </li>
+                  <li class="safe_car_list">
+                      <div class="img_wrap"><a href="#"><img src="./img/ansim_car3.jpg" alt="안심매매상사차량 이미지"></a></div>
+                      <p class="car_name">[기아]스포티지 뉴 스포티지 2.0 디젤 2WD TLX ...</p>
+                      <div class="ansim_badge"><span>방문예약</span><span>저금리</span></div>
+                      <div class="safe_car_price_area">
+                        <span class="safe_car_price">450</span><span>만원</span>
+                      </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+
+
+        </div>
+      </section>
+      <section class="footer_banner_wrap">
+        <div class="width1280">
+          <ul>
+            <li><a href="#"><img src="./img/m_banner_01.jpg" alt="인기차량 바로가기"></a></li>
+            <li><a href="#"><img src="./img/m_banner_02.jpg" alt="인증중고차 바로가기"></a></li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        <div class="width1280">
+          <div class="footer_left">
+            <img src="./img/ai_ft_logo.png" alt="오토핸즈로고">
+            <ul class="footer_list">
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+            </ul>
+            <p>(주)오토핸즈 서울시 영등포구 국회대로 70길 19, 603호(여의도동,대하빌딩) | 대표이사 : 강귀호<br/>
+                사업자등록번호 : 107-88-01180 | 통신판매업신고 : 제 2015-서울영등포-0861호</p>
+            <p>오토인사이드 CopyrightsⓒAutoHands. All rights reserved.</p>
+          </div>
+          <div class="footer_right">
+            <p>고객센터</p>
+            <p class="phone_number">1800-5851</p>
+            <p>평일 09:00~17:20<br/>(토요일 및 공휴일 휴무)</p>
+          </div>
+        </div>
+      </footer>
+
+
+
+    </div>
+
+  </body>
+</html>

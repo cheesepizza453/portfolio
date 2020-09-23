@@ -1,0 +1,261 @@
+.width1280{width:1280px; height:100%; margin:0 auto;}
+a{display:inline-block; width:100%; height:100%; text-align:center; vertical-align:middle;}
+b{vertical-align:baseline;}
+body, input{font-family:'Noto Sans KR', sans-serif; color:#111;}
+h4{display:none;}
+
+/* 헤더 */
+.header_top_wrap{width:100%; height:45px; margin-top:7px; border-bottom:1px solid #c7c7c7;}
+.header_top_wrap li{float:left;}
+.header_top_wrap ul::after{content:""; display:inline-block; clear:both;}
+.page_link{width:325px; height:45px; background:#e1e1e1}
+.page_link.active{background:#fff; border:1px solid #c7c7c7; border-bottom:0;}
+.page_link_area a{font-size:15px; color:#4a4a4a; font-weight:bold; line-height:45px;}
+.page_link_area a>b{font-size:17px; color:#111;}
+.service_area{float:right;}
+.service_area>li{position:relative; padding:0 20px;}
+.service_area>li:last-child{padding-right:0;}
+.service_area>li::after{content:""; position:absolute;display:block; width:2px; height:12px; top:4px; right:0; background:#555;}
+.service_area>li:last-child::after{display:none;}
+.service_area a{font-size:16px; color:#010101; font-weight:bold;}
+.header_logo_line_wrap{height:110px;}
+.header_logo_line_wrap h2{float:left; margin:40px 0;}
+.header_logo_line_wrap h2 img{width:215px; height:auto;}
+.search_area{position:absolute; display:inline-block; width:400px; height:40px; top:35px; left:50%; margin-left:-200px;}
+.main_search{width:350px; height:30px; padding-left:10px; font-size:17px; line-height:40px; border:0; border-bottom:2px solid #4a81ff;}
+.search_area a{position:absolute; display: inline-block; top:5px; right:40px; width:20px; height:20px; }
+.search_area img{width:100%; height:100%;}
+.header_logo_line_wrap::after{content:""; display:block; clear:both;}
+.mypage_area{float:right; margin:30px 20px 0 30px;;}
+.mypage_area::after{content:""; display:block; clear:both;}
+.mypage_area p{margin-top:10px; font-size:13px; font-weight:bold;}
+.header_logo_line_wrap>div{position:relative;}
+.hy_quick_link{position:absolute; width:113px; height:40px; right:-120px; top:30px; font-size:13px;}
+nav{position:relative; width:100%; height:70px; border-top:1px solid #c7c7c7;}
+nav a:hover{color:#4a81ff;}
+.nav_menu_area{position:absolute; display:block; top:22px; font-weight:bold;}
+.nav_menu_area>li{float:left; margin-right:60px; font-size:17px;}
+.nav_menu_area::after{content:""; display:block; clear:both;}
+.hamburger_btn{width:40px; height:40px; margin-top:20px; float:right;}
+.all_menu_wrap{position:absolute; display:none; top:90px; width:1240px; height:auto; padding:25px 0 25px 40px; text-align:left; border:1px solid #c7c7c7; background:#fff; box-shadow:5px 3px 7px rgba(100,100,100,0.5); z-index:3;}
+.all_menu_close_btn{position:absolute; top:25px; right:30px; width:20px; height:20px; z-index:5;}
+.all_1depth{font-size:17px; color:#4a81ff;}
+.division_menu_area{position:relative; height:212px; padding: 0 60px; float:left; border-right:1px solid #c7c7c7;}
+.all_menu_wrap .division_menu_area:first-child{padding:0 60px 0 0px;}
+.all_menu_wrap .division_menu_area:last-child{padding:0 0px 0 60px; border:none;}
+.all_menu_wrap .division_menu_area:first-child::after{display:none;}
+.all_menu_wrap>ul::after{content:""; display:block; clear:both;}
+.all_2depth{font-size:15px; font-weight:bold; text-align:left;}
+.all_3depth{font-size:15px;}
+.all_2-3depth_wrap{float:left; margin-right:30px;}
+.all_menu_wrap .division_menu_area:nth-child(2) .all_2-3depth_wrap{margin-right:0;}
+.all_2-3depth_wrap a{text-align:left;}
+.all_2-3depth_wrap li{margin-top:15px;}
+.all_2-3depth_wrap>ul>li:first-child{margin-top:20px;}
+.all_menu_wrap::before{content:"";position:absolute; display:block; top:-11px; right:52px; width:20px; height:11px; background:url(../img/allmenuArr.png)no-repeat; }
+
+
+
+/* 메인비주얼 */
+.visual_wrap{position:relative; width:100%; height:auto;}
+.visual_img{position:relative; overflow:hidden;}
+.slick-dots{position:absolute; left:50%; transform:translateX(-50%);}
+.slick-dots>li{float:left; margin-right:10px;}
+.slick-dots>li>button{text-indent:-999999px; padding:0; width:10px; height:10px; border:none; background:#e7eeff; border-radius:50%; transition:all 0.5s; cursor:pointer;}
+.slick-dots>.slick-active>button{width:45px; background:#d3e0ff; border-radius:5px;}
+.visual_wrap .slick-dots{bottom:160px;}
+/* 첫번째 비주얼 */
+.visual02{background:url(../img/mainB02_Bg.jpg);}
+.mainb_gb_2-1{position:absolute; top:0; right:180px; animation-duration: 2s; animation-name:visual2; animation-iteration-count: infinite; animation-direction: alternate; animation-timing-function:ease-in-out;}
+.mainb_gb_2-2{position:absolute; bottom:170px; right:180px;}
+.visual_img>a{width: auto; height: 100%; transform: translateX(25%);}
+
+@keyframes visual2 {
+  0% {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
+/* 비주얼2 */
+.visual03{background:#646fff}
+.slick-active .mainb_gb_3{animation-duration: 5s; animation-name:visual3; animation-timing-function:ease-in-out; animation-fill-mode:forwards;}
+.mainb_gb_3-1{position:absolute; opacity:0; top:100px; right:477px;}
+.mainb_gb_3-2{position:absolute; opacity:0; top:5px; right:294px; animation-delay:2s;}
+.mainb_gb_3-3{position:absolute; opacity:0; top:100px; right:65px; animation-delay:4s;}
+
+
+@keyframes visual3 {
+  0% {opacity:0; transform: scale(1.2);}
+
+  20% {
+    transform: scale(1); opacity:1;
+  }
+  100% {
+    transform: scale(1); opacity:1;
+  }
+}
+
+/* 비주얼4 */
+.visual04{background:#FFCA65;}
+
+.slick-active .mainb_gb_4{opacity:0; animation-duration: 1.5s; animation-name:visual4; animation-fill-mode:forwards;}
+.mainb_gb_4-1{position:absolute; top:8px; right:93px;}
+.mainb_gb_4-2{position:absolute; top:94px; right:312px; animation-delay:1.5s;}
+.mainb_gb_4-3{position:absolute; top:160px; right:130px; animation-delay:3s;}
+.mainb_gb_4-4{position:absolute; top:235px; right:34px; animation-delay:4.5s;}
+.mainb_gb_4-5{position:absolute; top:297px; right:303px; animation-delay:6s;}
+
+@keyframes visual4 {
+  0% {opacity:0;
+  }
+
+  100% {
+    opacity:1;
+  }
+}
+
+/* 내차팔기 간편신청 */
+.sell_request_wrap{position:absolute; bottom:20px; left:50%; transform:translateX(-50%); width:1110px; height:120px; padding:15px; box-sizing:border-box; border:1px solid #c7c7c7; background:#fff; box-shadow:5px 3px 7px rgba(100,100,100,0.5); z-index:3;}
+.sell_request_wrap>ul>li{float:left; width:auto; height:100%; padding: 0 20px; border-right:1px solid #c7c7c7;}
+.sell_request_wrap>ul>li:nth-child(n+4){border:none;}
+.sell_request_wrap>ul::after{content:""; display:block; clear:both;}
+.division_request_area img{position:absolute; top:50px; left:15px;}
+.request_title_area{margin:15px 0 0 25px;}
+.request_title_area h3{margin-bottom:10px; font-size:25px; font-weight:bold; letter-spacing:-0.3px; color:#4a81ff;}
+.request_title_area span, .division_request_area p, .sell_request_wrap>ul>li:last-child span, .sell_request_wrap>ul>li:last-child a{font-size:16px; font-weight:bold; color:#a0a0a0;}
+.division_request_area p{padding:10px 0 15px 0;}
+.division_request_area input{width:160px; font-size:26px; color:#c7c7c7; border:none; margin-left:-5px;}
+.sell_request_wrap>ul>li:last-child a{display:inline; border-bottom:1px solid #c7c7c7;}
+.sell_request_wrap>ul>li:last-child input{width:16px; height:16px; vertical-align:bottom; background:url(../img/unChk_02.png) no-repeat;}
+.division_request_area button{margin-top:10px; width:100%; height:40px; linie-height:40px; font-family:'Noto Sans KR', sans-serif; font-size:16px; font-weight:bold; color:#fff; border:none; background:#4a81ff;}
+
+/* 우측 고정 퀵배너 */
+.right_quicklink_wrap{position:absolute; width:115px; top:220px; right:180px;}
+.right_quicklink_wrap>a:nth-child(3){margin-top:10px;}
+.circle{position:relative; display:inline-block; width:110px; height:110px; margin-top:20px; border-radius:55px; background:#8c7af8}
+.circle span{font-family:'Noto Sans KR', sans-serif; font-size:65px; color:#fff; line-height:110px; animation-duration: 2s; animation-name:circle_ani; animation-iteration-count: infinite; animation-direction: alternate;}
+.circle_triangle{position:absolute; width: 0px; height: 0px; top:107px; left:47px; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 15px solid #8c7af8;}
+.circle_text{display:inline-block; margin-top:20px; font-size:16px; font-weight:bold; color:#8c7af8;}
+
+
+@keyframes circle_ani {
+  0% {
+    opacity:100%''
+  }
+
+  to {
+    opacity:0;
+  }
+}
+
+
+/* 상단 띠배너(내 차 팔기 판매 수~ 이 달의 최고 경쟁률) */
+.top_banner_wrap{width:100%; height:115px; left:50%; padding-top:30px; box-sizing:border-box; background:#eaf2fe;}
+.top_banner_wrap ul{position:relative; display:inline-block; left:50%; transform:translateX(-50%);}
+.top_banner_wrap li{position:relative; margin-right:30px; float:left;}
+.top_banner_wrap ul::after{content:""; display:block; clear:both;}
+.selling_cars{margin:0 0 10px 60px; text-align:left; font-size:25px; font-weight:bold; letter-spacing:-0.3px; color:#4a81ff;}
+.top_banner_wrap span{margin-left:60px; float:left; font-size:15px; font-weight:bold; color:#bbb;}
+.top_banner_wrap img{position:absolute; top:0; left:0; width:50px; height:50px; margin-right:10px;}
+.top_banner_wrap li::after{content:""; display:block; clear:both;}
+
+/* 고마워요 오토인사이드 (내차팔기 후기 슬라이드 영역) */
+.reivew_slide_wrap{padding-top:100px;}
+.title{margin-bottom:20px; font-size:28px; font-weight:bold; color:#000; text-align:center;}
+.sub_text{font-size:18px; color: #5e5e5e; text-align:center;}
+.see_more{display:inline-block; margin:20px 0; font-size:16px; font-weight:bold; color:#4a81ff;}
+.review_slide_area{margin-top:50px;}
+.review_area{position:relative; width:400px; height:480px; margin-right:10px; padding:30px; background:#f6f6f6; box-sizing:border-box; border:1px solid #c7c7c7; transition:all 0.5s;}
+.review_area:hover{box-shadow: 5px -5px 15px rgba(0,0,0,0.2);}
+.circle_image_wrap{position:relative; width:160px; height:160px; margin:30px auto 20px auto; border-radius:80px; overflow:hidden;}
+.review_car_image{height:100%; min-width:160px; min-height:160px;}
+.best_badge{position:absolute; display:none; top:60px; right:100px;}
+.review_badge{display:inline-block; margin-bottom:30px; padding:0 10px; font-size:17px; font-weight:bold; color:#4a81ff; border:2px solid #4a81ff;}
+.review_contents{max-height:75px; min-height:75px; font-size:19px; font-weight:bold; text-align:left; line-height:25px;}
+.car_name{margin:20px 0; text-align:left; font-size:16px; color:#7e7e7e;}
+.consumer_name{float:left; font-size:14px; font-weight:bold;}
+.review_date{float:right; font-size:15px; font-weight:bold;}
+.reivew_slide_wrap .slick-slide{margin-right:20px;}
+.reivew_slide_wrap .slick-dots{bottom:-60px;}
+
+/* 내차팔기 완료차량 */
+.sold_out_slide_wrap {padding-top:160px;}
+.sold_out_slide_area{width:100%; margin-top:50px;}
+.sold_out_area{position:relative; width:25%; padding:15px; box-sizing:border-box; border:1px solid #c7c7c7; border-right:none;}
+.sold_image_wrap{width:100%; height:100%; margin-bottom:20px;}
+.sold_car_image{width:100%; min-height:216px;}
+.sold_car_name{margin-bottom:5px; font-size:18px; font-weight:bold; text-align:left;}
+.sold_car_spec{margin-bottom:15px; font-size:16px; text-align:left;}
+.nakchal_icon{position:absolute; width:55px; height:55px; right:10px; top:240px;}
+.car_info{padding-top:10px; border-top:1px solid #c7c7c7;}
+.car_info>li{width:50%; float:left; text-align:left;}
+.car_info>li>ul>li:first-child{margin-bottom:15px;}
+.car_info>li>ul>li:nth-child(n+2){margin-bottom:10px;}
+.sold_price_area>span{color:#3d91fe; font-size:26px; font-weight:bold}
+.sold_competition_rate_area>span{color:#fea53d; font-size:26px; font-weight:bold;}
+.sold_price_area>span:last-child, .sold_competition_rate_area>span:last-child{font-size:16px;}
+.car_info li{color:#5e5e5e; font-size:16px;}
+.sold_out_slide_area .slick-slide:nth-child(4n) .sold_out_area {border-right:1px solid #c7c7c7;}
+.sold_out_slide_wrap .slick-dots{bottom:-50px;}
+
+/* 오토인사이드 내차사기 바로가기 띠배너 */
+.buy_mycar_wrap{width:100%; margin:150px 0 100px 0; background:#fbf4d7; font-size:20px;}
+
+/* 안전 인증 차량 리스트 */
+
+ul.safe_car_menu_area {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1060px;
+  }
+.buy_safe_car_wrap>.width1280{position:relative;}
+.safe_car_menu{width:530px; height:60px; float:left; font-size:20px; line-height:58px; color:#9e9e9e; text-align:center; border:1px solid #d2d2d2; border-bottom:2px solid #4a81ff; border-left:0; box-sizing:border-box; background:#f3f3f3; cursor:pointer;}
+.safe_car_menu.active{color:#4a81ff; border:2px solid #4a81ff; border-bottom:0; background:#fff;}
+.safe_car_menu_area::after{content:""; display:block; clear:both;}
+.buy_safe_car_wrap>div>ul:last-child{padding-top:68px;}
+.safe_car_list{width:32.5%; margin-right:10px; padding:15px; float:left; border:1px solid #c7c7c7; box-sizing:border-box;}
+.img_wrap{position:relative; width:100%; height:300px; overflow:hidden;}
+.img_wrap img{width:140%; transform:translateX(-50%); margin-left:50%;}
+.safe_car_list_area::after{content:""; display:block; clear:both;}
+.safe_car_list_area .car_name{margin:20px 0 10px 0; padding-bottom:10px; font-size:18px; font-weight:bold; color:#111; border-bottom:1px solid #c7c7c7;}
+.safe_car_list_area .safe_car_price_area{display:inline-block; padding-left:250px; float:right; font-size:22px; font-weight:bold; color:#1773e9; }
+.safe_car_list_area .safe_car_liss_price_area{display:inline-block; margin:5px 0 10px 248px; float:right; font-size:18px; font-weight:bold; color:#111;}
+
+.ansim_buy_area .car_name{margin-bottom:17px;}
+.ansim_buy_area .safe_car_price_area{float:right; margin:0 0 20px 0; padding:0;}
+.ansim_badge{float:left; margin-top:10px;}
+.ansim_badge>span{padding:5px; font-size:15px; color:#9e9e9e; background:#eaeaea; margin-right:5px;}
+.safe_car_list::after{content:""; display:block; clear:both;}
+.safe_car_price{font-size:26px;}
+.safe_car_list_wrap{margin-top:50px;}
+.safe_car_list_area{margin-top:20px; display:none;}
+.safe_car_list_area.active{display:block;}
+
+
+
+/* 푸터 상단 배너영역 */
+.footer_banner_wrap{margin:100px 0 80px 0;}
+.footer_banner_wrap li{display:inline-block; width:48.8%;}
+.footer_banner_wrap li:first-child{margin-right:2%;}
+.footer_banner_wrap img, .footer_banner_wrap a{width:100%;}
+
+/* 푸터 */
+footer{padding:50px 0; background:#f3f7ff;}
+.footer_left{display:inline-block; width:85%;}
+.footer_list{margin:30px 0;}
+.footer_list>li{float:left; padding:0 10px; border-right:1px solid #c7c7c7;}
+.footer_list::after{content:""; display:block; clear:both;}
+.footer_list>li:first-child{padding-left:0; font-weight:bold;}
+.footer_list>li:last-child{border:0; font-weight:bold;}
+.footer_list a{display:inline-block; width:auto; font-size:14px;}
+.footer_left p{font-size:13px; color:#555; line-height:20px;}
+.footer_left p:last-child{margin-top:15px;}
+.footer_right{display:inline-block; width:14.7%;}
+.footer_right p{font-size:16px; color:#555; line-height:25px;}
+.footer_right .phone_number{font-size:35px; font-weight:bold; margin:10px 0 20px 0;}
