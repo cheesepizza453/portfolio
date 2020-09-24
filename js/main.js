@@ -29,6 +29,13 @@ function animation() {
 
       var position = $(window).scrollTop();
 
+
+      if( position > 100 ){
+        $('nav').css({opacity:'1', margin:'0 0 0 0'});
+      }else if( position <= 100 ){
+        $('nav').css({opacity:'0', margin:'-80px 0 0 0'});
+      };
+
       if(position > 0 && position < 200 ) {
         $('.introduce .content_area').css({top: '-100vh'});
         $('nav').css({opacity:'0', margin:'-80px 0 0 0'});
@@ -43,11 +50,12 @@ function animation() {
       } else if (position > 200 && position < 1200 ) {
         $('.introduce .content_area').css({top: '0vh'});
         $('nav').css({opacity:'1', margin:'0 0 0 0'});
-        $('.slide .title_area .title').css({opacity: '0'});
-        $('.slide .content_area .cont').css({opacity:'0'});
+        // $('.slide .title_area .title').css({opacity: '0'});
+        // $('.slide .content_area .cont').css({opacity:'0'});
       }else if (position > 1200 && position < 5000 ) {
         $('.slide .title_area .title').css({opacity: '1'});
         $('.slide .content_area .cont').css({opacity:'1'});
+        $('nav').css({opacity:'1', margin:'0 0 0 0'});
 
       };
     });
