@@ -1,11 +1,11 @@
 $(document).ready(function (){
 
 
-  $(window).resize(function() {
-    if($(window).width() <1000) {
-      alert('PC사이즈에 최적화되어있는 화면입니다.');
-    }
-  });
+  // $(window).resize(function() {
+  //   if($(window).width() <1000) {
+  //     alert('PC사이즈에 최적화되어있는 화면입니다.');
+  //   }
+  // });
 
 
 

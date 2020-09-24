@@ -1,3 +1,12 @@
+var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+for (var word in mobileKeyWords){
+    if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+        location.href = "./portfolio_site/3_2/m_index.html";
+        break;
+    }
+}
+
+
 $(document).ready(function (){
 
  // a태그 무효화
@@ -28,16 +37,6 @@ $('.main_slide_wrap').slick({
   fade: true,
   speed:1000
 });
-
-// 메인배너 영역에서만 메인배너 이동 버튼 노출
-$('.main_slide_wrap').hover(function(){
-  $('.slick-prev, .slick-next').css('display', 'block').animate({opacity:1},200);
-})
-$('.main_slide_wrap').mouseleave(function(){
-  $('.slick-prev, .slick-next').stop().animate({opacity:0},200);
-})
-
-
 
 //최상단 버튼
 $('.top_btn').click(function() {
@@ -74,7 +73,6 @@ $('.r_m_close_btn>img').attr('src','./img/all_menu_icon.png');
 });
 
 
-//선택자 정리하기
 $('.r_m_2depth>li>a').mouseover(function(){
   $(this).parent().parent().parent().children('a').css('border-bottom', '2px solid #222');
 });
@@ -83,27 +81,30 @@ $('.r_m_2depth>li>a').mouseout(function(){
 });
 
 
-$(window).scroll(function () {
+$(window).scroll(function (){
 var height = $(document).scrollTop();
-if (height >= 120){
-  $('.r_m_close_btn');
+if (height >= 150){
+  $('.r_m_close_btn').animate({'opacity':'1'},50);
 }else{
-  $('.r_m_close_btn');
+  if($('.right_menu_wrap').hasClass('on')){}
+  else{
+    $('.r_m_close_btn').animate({'opacity':'0'},50);
+  }
 }
 });
 
 //우측메뉴 여닫힘
 $('.r_m_close_btn').click(function(){
   if($('.right_menu_wrap').hasClass('on')){
-    $('.r_m_close_btn>img').attr('src','./img/all_menu_close_icon.png');
-    $('.right_menu_wrap').removeClass('on');
-  }else{
     $('.r_m_close_btn>img').attr('src','./img/all_menu_icon.png');
+    $('.right_menu_wrap').removeClass('on');
+    $('.r_m_close_btn').removeClass('on');
+  }else{
+    $('.r_m_close_btn>img').attr('src','./img/all_menu_close_icon.png');
     $('.right_menu_wrap').addClass('on');
+    $('.r_m_close_btn').addClass('on');
   }
 });
-
-
 
 
 //  메인콘텐츠 페이드인 효과
@@ -123,6 +124,7 @@ $(window).scroll( function(){
       }
   });
 });
+
 
 
 });

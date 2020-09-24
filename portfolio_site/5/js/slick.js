@@ -84,7 +84,7 @@
                 touchThreshold: 5,
                 useCSS: true,
                 useTransform: true,
-                variableWidth: false,
+                variableWidth: true,
                 vertical: false,
                 verticalSwiping: false,
                 waitForAnimate: true,
@@ -141,7 +141,7 @@
             _.transformType = null;
             _.transitionType = null;
             _.visibilityChange = 'visibilitychange';
-            _.windowWidth = 0;
+            _.windowWidth = 100;
             _.windowTimer = null;
 
             dataSettings = $(element).data('slick') || {};
