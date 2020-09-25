@@ -162,6 +162,7 @@ nav .menu_down_cont{display: none; position: absolute; z-index: 10000; width:100
 .topmeni_cont{width:312px; float:left; margin-left:30px; text-align: center;}
 .topmeni_cont>ul{padding:5px 0;}
 .topmeni_cont li{width:33.3%; margin-bottom:10px; float:left;}
+.topmeni_cont a{display:block; width:100%; height:100%;}
 .topmeni_cont p{margin-top:10px; height:30px; font-size:13px; text-align: center;}
 
 /* 시정소식 게시판 */
@@ -201,6 +202,7 @@ nav .menu_down_cont{display: none; position: absolute; z-index: 10000; width:100
 .balloontitle:hover::before, .balloontitle.active::before{content: ""; display: inline-block; position: absolute; top:48px; left:50%; margin-left:-8px; width:16px; height:12px; background-color: #fff; background-image: url(../img/choice_mark.png);  }
 .direct{width:100%; margin-top:40px;}
 .direct_gray{position: relative; width: 130px; float:left;  margin:0 10px 10px 0; background:#f2f3f7; padding:3px 10px; line-height: 40px;}
+.direct_gray a{display:block; width:100%; height:100%;}
 .direct_gray i{position: absolute; top:16px; right:10px; font-size: 20px; color:#ccc;}
 .long_text{padding: 7px 10px; font-size:14px; line-height:16px;}
 .minone_list{display: none;}
@@ -302,7 +304,7 @@ nav .menu_down_cont{display: none; position: absolute; z-index: 10000; width:100
 .footer_link_cont{position:relative; width:100%; height:50px; float:left; background:#eceef3; border:1px solid #ddd; box-sizing: border-box; z-index:1;}
 .site_select_btn{position:relative; float:left; border-right:1px solid #ddd; line-height: 50px; color: #222;}
 .site_select_btn:first-child{border-left:1px solid #ddd;}
-.site_select_btn>button{border:0; height:100%; margin:0 14px; padding-right:50px; font-size:15px;
+.site_select_btn>button{border:0; height:100%; margin:0 14px; padding-right:50px; font-size:15px; cursor:pointer;
 background:url(../img/footer_dep.png) no-repeat; background-position: right;background-size: 20px;}
 .site_select_btn ul{position:absolute; display:none; width:100%; bottom:50px; padding-left:20px; font-size:14px; line-height:24px; border:1px solid #bbb; background:#fff; overflow-y:scroll; box-sizing:border-box;}
 
