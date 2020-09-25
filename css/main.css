@@ -46,7 +46,7 @@ b, i{vertical-align: baseline;}
   nav{position:fixed; width:100%; height:80px; margin:-80px 0 0 0; background:rgba(255,255,255,0.9); z-index:10; box-shadow: 0 5px 6px rgba(100,100,100,0.1); overflow:hidden; transition:1s ease;}
   nav div{position:absolute; width:170px; top:10px; left:5%;}
   nav div > img{width:100%;}
-  .top .title_area{position:absolute; width:90vh; height:30vh; top:12vh; left:50%; transform:translateX(-50%); z-index:6; transition:0.8s ease;}
+  .top .title_area{position:absolute; width:90vh; height:28.5vh; top:12vh; left:50%; transform:translateX(-50%); z-index:6; transition:0.8s ease;}
   .top .title_area::after{content:""; display:block; clear:both;}
   .top .content_area h1 img{width:100%; height:100%;}
   .m_logo{opacity:0; display:none;}
@@ -113,10 +113,13 @@ b, i{vertical-align: baseline;}
   .slide .content_area a:hover img{width:200px;}
   .slide .pp_badge_area{margin:25px 0 20px 0; padding:3px;}
   .slide .pp_badge{border:1px solid #333; padding:2px 8px; margin:10px 8px 0 0;}
-  .slide .title{margin-bottom:20px; font-size:20px; font-weight:bold;}
+  .slide .title{position:relative; display:inline-block; margin-bottom:20px; font-size:20px; font-weight:bold;}
+  .slide ul .title::after{content:""; position:absolute; display:block; width:18px; height:18px; top:1px; right:-21px; background:url(../img/open.png)no-repeat; background-size: cover;}
+  .slide ul > .cont:last-child .title::after{display:none;}
   .slide .sub_txt{font-size:12px; line-height:18px; color:#888;}
   .slide .pf_more{display:block; width:100px; margin-top:5px; padding:20px 20px 20px 0; font-size:14px; color:#888; font-weight:bold; transition:0.6s all;}
   .slide .pf_more:hover{color:#333;}
+
 
 .content_area>ul>.cont:nth-child(3)>.pf_more:last-child{float:right; margin-top:-54px; padding-right:0;}
 
@@ -128,7 +131,7 @@ b, i{vertical-align: baseline;}
 @media (max-width: 1025px) {
   .pc_logo{opacity:1; display:block;}
   .m_logo{opacity:0; display:none;}
-  .top .title_area{top:auto; bottom:0; width:80vw; height:27vw; }
+  .top .title_area{top:auto; bottom:0; width:80vw; height:26.3vw; }
   .top .content_area .taste{top:auto; bottom:-30%; font-size:40px; padding:2% 5%; border: 5px solid #ef0000;}
   .introduce .content_area{min-height:950px;}
   .introduce_area .my_pic{height:160px;}
@@ -146,7 +149,7 @@ b, i{vertical-align: baseline;}
 @media (max-width: 721px) {
   .pc_logo{opacity:0; display:none;}
   .m_logo{opacity:1; display:block;}
-  .top .title_area {top:auto; bottom:0; width:80vw; height:50vw;}
+  .top .title_area {top:auto; bottom:0; width:80vw; height:49vw;}
   .top .content_area .taste{display:none;}
   .introduce .introduce_area{margin:60px auto 0;}
   .introduce .content_area{min-height:780px; height:780px; border-radius: 0 0 30px 30px;}
