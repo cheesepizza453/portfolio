@@ -118,7 +118,7 @@ b, i{vertical-align: baseline;}
   .slide .pf_more{display:block; width:100px; margin-top:5px; padding:20px 20px 20px 0; font-size:14px; color:#888; font-weight:bold; transition:0.6s all;}
   .slide .pf_more:hover{color:#333;}
 
-
+.content_area>ul>.cont:nth-child(3)>.pf_more:last-child{float:right; margin-top:-54px; padding-right:0;}
 
   @media (max-width: 1650px) {
     .introduce .introduce_area{width:90%;}
