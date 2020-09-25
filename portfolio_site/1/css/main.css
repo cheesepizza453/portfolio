@@ -178,3 +178,6 @@ footer img{display: block; margin:0 auto;}
   .gnb{width:100%;}
   .gnb>h1{margin-left:5%;}
 }
+@media ( max-width: 720px ) {
+  .link_list{display:none;}
+}

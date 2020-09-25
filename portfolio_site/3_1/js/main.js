@@ -1,12 +1,3 @@
-var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
-for (var word in mobileKeyWords){
-    if (navigator.userAgent.match(mobileKeyWords[word]) != null){
-        location.href = "./portfolio_site/3_2/m_index.html";
-        break;
-    }
-}
-
-
 $(document).ready(function (){
 
  // a태그 무효화

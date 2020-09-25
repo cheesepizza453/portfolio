@@ -24,6 +24,7 @@ $(document).ready(function (){
     pause: 5000,
   });
 
+
   var madang_slide = $('#madang_slide').bxSlider({
     auto: true,
     pager: true,
@@ -40,6 +41,13 @@ $(document).ready(function (){
     controls:false,
     slideWidth:310,
     });
+
+    // if($(widow).width() < 771)
+    // var madang_width = $('.contents_wrap.width1000').width();
+    // $(window).resize(function(){
+    //   var what = $('.madang_width').width();
+    //   $('.madang_width').width(what);
+    // }).resize();
 
       $('#prev_btn').on('click', function() {
       madang_slide.goToPrevSlide();  //이전 슬라이드 배너로 이동

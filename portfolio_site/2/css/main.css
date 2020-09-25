@@ -330,35 +330,8 @@ footer{width:100%; float:left;}
 .pc_footer_call>li{position: relative; margin-bottom:5px; padding-left:10px;}
 .pc_footer_call>li::before{content: ""; display: block; position: absolute; width:4px; height:4px; background: #aaa; top:5px; left:0px; border-radius:50%;}
 .QR{position: absolute; top:0; right:-70px;}
-width: 4px;
-height: 4px;
-background: #ddd;
-top: 10px;
-left: -10px;
-}
 
 
-@media ( max-width: 1023px ) {
-  B
-}
-@media ( max-width: 767px ) {
-  /* 최상단 배너 */
-  .width1000{width:100%; padding:3%;}
-
-  .banner{width: 100%; height:auto;}
-  .banner_sub{display: none;}
-  .banner ul{display: none;}
-  .banner_gijoon{display: none;}
-  .banner_more{position:relative; top:0; right:0; margin:0 auto;}
-
-  .headertop_wrap {display: none;}
-  .logo_area{display: none;}
-  nav{display: none;}
-
-  .quick_cont{display: none;}
-
-  .mayor_cont{width:100%;}
-
-  .pc_right_banner{display: none;}
-
+@media ( max-width: 720px ) {
+  .link_list{display:none;}
 }

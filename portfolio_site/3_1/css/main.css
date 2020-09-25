@@ -170,3 +170,8 @@ footer b{font-weight: bold;}
 .r_m_2depth a:hover{color:#222;}
 .r_m_close_btn{position:fixed; top:10px; right:10px; display:block; width:70px; height:60px; line-height:55px; opacity:0; text-align: center; background:rgba(255, 255, 255, 0.93); box-shadow: 10px 0px 15px rgba(100, 100, 100, 0.4); cursor:pointer; z-index:15;}
 .r_m_close_btn.on{right:320px;}
+
+
+@media ( max-width: 720px ) {
+  .link_list{display:none;}
+}
