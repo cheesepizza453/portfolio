@@ -172,6 +172,8 @@ footer b{font-weight: bold;}
 .r_m_close_btn.on{right:320px;}
 
 
+
+
 @media ( max-width: 720px ) {
   .link_list{display:none;}
 }
