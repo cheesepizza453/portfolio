@@ -1,5 +1,17 @@
 $(document).ready(function (){
 
+
+// 링크 영역
+	$('.link_btn').click(function(){
+		if(!$(this).hasClass('clicked')){
+				$(this).addClass('clicked');
+				$('.link_area').addClass('clicked');
+			}else{
+				$(this).removeClass('clicked');
+				$('.link_area').removeClass('clicked');
+		}
+	});
+
   // 화면 높이가 소개 영역의 min heigt보다 낮을 경우 포폴 영역 패딩값 설정
   // 1. NaN 오류 출력 -> 값을 문자로 인식해서 나오는 오류기 때문에  parseInt 추가했다. 자바스크립트에서는 if문으로 NaN인지 확인할수도 있음
     function slide_padding() {

@@ -1,5 +1,17 @@
 $(document).ready(function (){
 
+  // 링크 영역
+	$('.link_btn').click(function(){
+		if(!$(this).hasClass('clicked')){
+				$(this).addClass('clicked');
+				$('.link_area').addClass('clicked');
+			}else{
+				$(this).removeClass('clicked');
+				$('.link_area').removeClass('clicked');
+		}
+	});
+
+
 // 하단 슬라이드
   $('.slide_area').slick({
     slidesToShow: 1,
@@ -37,7 +49,7 @@ $(document).ready(function (){
         $('.all_channel_area .channel').css('display','block');
       }else if (index >= 1){
       $('.all_channel_area .channel').css('display','none');
-      // ALL외의 카테고리 클릭 시 채널 리스트 규칙에 맞게 노출 
+      // ALL외의 카테고리 클릭 시 채널 리스트 규칙에 맞게 노출
       $('.channel').eq(index*2-1).css('display','block');
       $('.channel').eq(index*2-2).css('display','block');
       }

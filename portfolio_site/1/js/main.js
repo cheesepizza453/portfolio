@@ -1,5 +1,23 @@
 $(document).ready(function () {
 
+	$(window).one('resize',function() {
+		if($(window).width() <1000) {
+			alert('PC사이즈에 최적화되어있는 화면입니다.');
+		}
+	});
+
+// 링크 영역
+	$('.link_btn').click(function(){
+		if(!$(this).hasClass('clicked')){
+				$(this).addClass('clicked');
+				$('.link_area').addClass('clicked');
+			}else{
+				$(this).removeClass('clicked');
+				$('.link_area').removeClass('clicked');
+		}
+	});
+
+
 	//19세 이상일 경우 레이어팝업 닫힘
 	$('.age_a_y').click(function(){
 		$('.age').hide();
@@ -58,6 +76,7 @@ $(document).ready(function () {
 		$('#play_video').attr('src', 'https://www.youtube.com/embed/'+ytb_video[v_number]);
 		$('.video_popup').css('display','block');
 	});
+
 
 
 	$('.close_btn').click(function(){

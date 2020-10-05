@@ -1,12 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800'); */
-.link_list{position:fixed; width:200px; height:220px; left:-200px; bottom:30vh; padding-top:14px; z-index:2000; background:rgba(255,255,255,0.6); transition:all 0.3s;}
-.link_list::after{content: "LINK"; display: block; position: absolute; transform: revert; width: 80px; height: 30px;top: 7px; right: -55px; text-align: center; font-size: 30px; transform: rotate(90deg); letter-spacing: -1px;}
-.link_list:hover{left:10px;}
-.link_list>a{position:relative; display:block; width:100%; height:20px; margin:8px 0; padding-left:20px; line-height:20px; font-size:14px; text-align:left; transition:all 0.3s;}
-.link_list>a:hover{font-size:18px; height:30px; line-height:30px;}
-.link_list .now{color:#11ae11;}
-.link_list .now::before{content:""; position:absolute; display:block; width:6px; height:6px; top:7px; left:8px; border-radius:10px; background:#11ae11;transition:all 0.3s;}
-.link_list .now:hover::before{top:12px;}
 
 @font-face {
   font-family: 'Nanum Gothic';
@@ -25,6 +16,26 @@ html, body{font-size:15px; font-family:'Nanum Gothic';}
 img{background-size:100%;}
 .transition{transition:all 0.5s ease;}
 .width1000{position:relative; width:1000px; margin:0 auto;}
+
+/* 링크 이동 영역 */
+.link_area{position:fixed; left:1.5%; bottom:-328px; width:200px; height:400px; z-index:2001; transition:ease-out 0.3s;}
+.link_area.clicked{bottom:5vh;}
+.link_btn{position:absolute; display:inline-block; width:60px; height:60px; bottom:340px; font-size:16px; text-align:center; line-height:55px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1);background:rgba(255,255,255,0.6); border-radius:50%; overflow: hidden; transition:all 0.6s; animation:link_btn 5s 2s infinite ease-in-out;}
+.link_btn.clicked{width:40px; height:40px; line-height:135px;box-shadow:0 0 0; background:transparent;}
+.link_btn::before{content:""; position:absolute; display:block; top:-30px; left:20px; width:2px; height:00px; background:#444; transform:rotate(-45deg); transition:all 0.8s;}
+.link_btn.clicked::before, .link_btn.clicked::after{height:30px; top:5px;}
+.link_btn::after{content:""; position:absolute; display:block; top:-30px; left:20px; width:2px; height:00px; background:#444; transform:rotate(45deg); transition:all 0.8s;}
+.link_list{position:absolute;; width:200px; bottom:10px; z-index:2000; padding:20px; box-sizing:border-box; background:rgba(255,255,255,0.6); border-radius:20px; transition:all 0.3s;}
+.link_list > a:hover, .link_list>a.now{font-size:18px; background:#faba07; color:#222;}
+.link_list>a{position:relative; display:block; width:100%; height:20px; margin:4px 0; padding:5px 0; color:#444; line-height:20px; font-size:14px; text-align:center; border-radius:10px; transition:all 0.3s;}
+
+@keyframes link_btn{
+  0% {transform:scale(1)}
+  50% {transform:scale(1);}
+  56%{transform:scale(1.1);}
+  60% {transform:scale(1);}
+  100% {transform:scale(1)}
+}
 
 
 /* 코로나배너 */
@@ -120,8 +131,7 @@ nav .menu_down_cont{display: none; position: absolute; z-index: 10000; width:100
 
 
 /* 상단 좌측 배너 */
-/* .banner_cont{ float:left; width:656px; height:340px;} */
-.top_banner_cont{position: relative; float:left; margin-bottom:30px;}
+.top_banner_cont{position: relative; min-width:656px; margin-bottom:30px; float:left;}
 .top_count_cont{position:absolute; display: inline-block; width:80px; height:25px; top:10px; right:10px; border-radius: 15px;; background: rgba(0,0,0,0.4); z-index:5;}
 #top_count, #top_pause_play i{color:#fff;}
 #top_count{position:absolute; top:3px; left:13px;letter-spacing: 2px; }

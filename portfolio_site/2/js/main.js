@@ -1,11 +1,22 @@
 $(document).ready(function (){
 
 
-  // $(window).resize(function() {
-  //   if($(window).width() <1000) {
-  //     alert('PC사이즈에 최적화되어있는 화면입니다.');
-  //   }
-  // });
+  $(window).one('resize',function() {
+    if($(window).width() <1000) {
+      alert('PC사이즈에 최적화되어있는 화면입니다.');
+    }
+  });
+
+  // 링크 영역
+	$('.link_btn').click(function(){
+		if(!$(this).hasClass('clicked')){
+				$(this).addClass('clicked');
+				$('.link_area').addClass('clicked');
+			}else{
+				$(this).removeClass('clicked');
+				$('.link_area').removeClass('clicked');
+		}
+	});
 
 
 
