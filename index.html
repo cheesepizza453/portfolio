@@ -6,17 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>김미리 포트폴리오</title>
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
-    <link rel="stylesheet" type="text/css" href="./css/slick.css">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <script src="./js/jquery-3.5.1.min.js"></script>
-    <script src="./js/script.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script> -->
     <script src="./js/main.js"></script>
   </head>
   <body>
     <!-- 링크 이동 버튼 영역 -->
-    <!-- <div class="link_area">
+    <div class="link_area">
       <a class="link_btn" href="javascript:;"><span>LINK</span></a>
       <div class="link_list">
         <a class="now" href="./index.html" >포트폴리오 메인</a>
@@ -28,200 +24,180 @@
         <a href="portfolio_site/5/index.html" target="_blank">네이버나우</a>
         <a href="portfolio_site/6/index.html" target="_blank">아프리카TV</a>
       </div>
-  </div> -->
+    </div>
     <div class="wrap">
-      <header>
-        <div>
-          <img src="./img/logo_pc.png" alt="logo">
+      <section class="top">
+        <div class="content_area">
+          <nav>
+            <div>
+              <img src="./img/logo_pc.png" alt="logo">
+            </div>
+          </nav>
+            <h1 class="title_area">
+              <img class="pc_logo" src="./img/logo_pc.png" alt="logo">
+              <img class="m_logo" src="./img/logo_m.png" alt="logo">
+            </h1>
+
+          <span data-scroll class="taste">열정맛</span>
         </div>
-      </header>
-      <div class="box_wrap">
-        <div class="box side">
-        <div class="box_top"></div>
-        <section class="top box_front">
-          <div class="content_area">
-              <h1 class="title_area">
-                <img class="pc_logo" src="./img/logo_pc.png" alt="김미리 포트폴리오 로고">
-                <img class="m_logo" src="./img/logo_m.png" alt="김미리 포트폴리오 로고">
-              </h1>
+        <div class="img_area">
+            <img src="./img/coding2.jpeg" alt="타이핑 이미지">
+        </div>
+      </section>
 
-            <span class="taste">열정맛</span>
-
-            <div class="circle_wrap"><div class="circle_left"></div><div class="circle_right"></div></div>
-
-          </div>
-          <div class="img_area">
-              <img src="./img/coding2.jpeg" alt="타이핑 이미지">
-          </div>
-        </section>
-        <section class="box_back">
-          <div class="introduce_container">
+      <section class="introduce">
+        <div class="top_box"></div>
+        <div class="content_area">
+          <!-- <div class="title_area">
+            <h3 class="title"><img src="./img/introduce_title.png" alt="지원자 소개"></h3>
+          </div> -->
+          <div class="introduce_area">
+            <div class="my_pic">
+              <div class="img_circle"><img src="./img/memememe.jpg" alt="내 사진"></div>
+              <p class="txt">처음뵙겠습니다!<br>신입 <i>퍼블리셔</i> 지원자<br><b>김미리</b> 입니다</p>
+            </div>
             <ul>
-              <li class="title_area">
-                <div class="title_middle">
-                  <div><img src="./img/logo.png" alt="메인로고 이미지"></div>
-                  <h2>3분 포트폴리오 열정맛</h2>
-                </div>
+              <li class="text_area">
+                <p class="title">기본 정보</p>
+                <p class="sub"><span>생　　　일</span>1994.12.09</p>
+                <p class="sub"><span>주　　　소</span>경기도 용인시 기흥구</p>
+                <p class="sub"><span>휴　대　폰</span>010-4148-8670</p>
+                <p class="sub"><span>메　　　일</span>miri9412@naver.com</p>
               </li>
-              <li class="introduce_me">
-                <div class="img_area"><img src="./img/memememe.jpg" alt="내사진"></div>
-                <div class="basic_info_area">
-                  <p class="title">소개</p>
-                  <p class="sub"><span>이　　　름</span>김미리</p>
-                  <p class="sub"><span>생　　　일</span>1994.12.09</p>
-                  <p class="sub"><span>주　　　소</span>경기도 용인시 기흥구</p>
-                  <p class="sub"><span>휴　대　폰</span>010-4148-8670</p>
-                  <p class="sub"><span>메　　　일</span>miri9412@naver.com</p>
-                </div>
-                <div class="history_area">
-                  <p class="title">교육 및 경력사항</p>
-                  <p class="sub"><span><em class="year">20</em>17.12 ~ <em class="year">20</em>18.05</span>이젠아카데미 분당<span class="mobile"><br></span> UI/UX 전문가 과정 수료</p>
-                  <p class="sub"><span><em class="year">20</em>19.04 ~ <em class="year">20</em>20.04</span>리노미디어 기획팀 근무</p>
-                  <p class="sub"><span><em class="year">20</em>19.12 ~ <em class="year">20</em>20.03</span>그린컴퓨터아카데미 분당 <span class="mobile"><br></span>퍼블리싱 과정 수료</p>
-                  <b class="line"></b>
-                </div>
+              <li class="text_area skills">
+                <p class="title">업무 스킬</p>
+                <p class="sub"><span class="icon">HTML</span><b class="graph html"></b></p>
+                <p class="sub"><span class="icon">CSS</span><b class="graph css"></b></p>
+                <p class="sub"><span class="icon">JS</span><b class="graph js"></b></p>
+                <p class="sub"><span class="icon">Jqueruy</span><b class="graph jq"></b></p>
               </li>
-              <li class="introduce_my_skill">
-                  <ul class="skill_area">
-                    <li class="title_area">업무 능력</li>
-                    <li>
-                      <span class="skill_name">HTML5 <em>88%</em></span>
-                      <div class="skill_graph html"><em></em></div>
-                      <p class="skill_txt">
-                        <span>#웹 접근성에 대한 이해</span> <span>#웹 표준 마크업 가능</span>
-                        <span>#보다 실용적인 마크업에 대한 고민</span></p>
-                    </li>
-                    <li>
-                      <span class="skill_name">CSS3 <em>90%</em></span>
-                      <div class="skill_graph css"><em></em></div>
-                      <p class="skill_txt"><span>#레이아웃 배치 및 UI css작성 능력</span>
-                        <span>#미디어쿼리 사용 가능</span><br> <span>#애니메이션의 원리에 대한 이해</span>
-                    </li>
-                    <li>
-                      <span class="skill_name">Javascript <em>70%</em></span>
-                      <div class="skill_graph js"><em></em></div>
-                      <p class="skill_txt"><span>#자바스크립트 기본 문법에 대한 이해</span><span>#기본적인 문제 해결 가능</span></p>
-                    </li>
-                    <li>
-                      <span class="skill_name">Jquery <em>82%</em></span>
-                      <div class="skill_graph jq"><em></em></div>
-                      <p class="skill_txt"><span>#기본적인 코딩 가능</span>
-                        <span>#제이쿼리 학습에 큰 흥미</span></p>
-                    </li>
-                  </ul>
+              <li class="text_area">
+                <p class="title">교육 및 경력사항</p>
+                <p class="sub"><span>2017.12 ~ 2018.05</span>이젠아카데미 분당캠퍼스<span class="mobile"><br></span>UI/UX 전문가 과정 수료</p>
+                <p class="sub"><span>2019.04 ~ 2020.04</span>리노미디어 기획팀 근무</p>
+                <p class="sub"><span>2019.12 ~ 2020.03</span>그린컴퓨터아카데미 분당캠퍼스 <span class="mobile"><br></span>퍼블리싱 과정 수료</p>
+                <b class="line"></b>
               </li>
             </ul>
           </div>
-        </section>
-          <div class="box_left"></div>
-          <div class="box_right"></div>
-          <div class="box_bottom">
-            <em class="box_inner"></em>
-            <section class="slide">
-              <div class="content_area">
-                <div class="title_area">
-                  <img src="./img/logo.png" alt="logo">
-                  <h3 class="title"><img src="./img/portfolio_title.png" alt="포트폴리오"></h3>
-                </div>
-                <ul>
-                  <li class="cont">
-                    <a class="main_img" href="./portfolio_site/1/index.html" target="_blank">
-                      <img src="./img/pf_logo1.png" alt="처음처럼 로고">
-                    </a>
-                    <div class="pf_badge_area">
-                      <span class="pf_badge">PC</span><span class="pf_badge">W3C통과</span><span class="pf_badge">개인제작</span>
-                    </div>
-                    <p class="title">처음처럼</p>
-                    <p class="sub_txt">포트폴리오를 처음 시작한 페이지이기에 의미를 담아 '처음처럼' 페이지를 퍼블리싱했습니다.
-                      열정은 처음처럼, 실력은 날이 다르게 상승하는 퍼블리셔가 되겠습니다!
-                      <br>사용 플러그인 : AOS  / Slick</p>
-                      <a class="pf_more" href="./portfolio_site/1/index.html" target="_blank">자세히보기</a>
-                  </li>
-                  <li class="cont">
-                    <a class="main_img" href="./portfolio_site/2/index.html" target="_blank">
-                      <img src="./img/pf_logo2.png" alt="용인시 로고">
-                    </a>
-                    <div class="pf_badge_area">
-                      <span class="pf_badge">PC</span><span class="pf_badge">W3C통과</span><span class="pf_badge">개인제작</span>
-                    </div>
-                    <p class="title">용인시</p>
-                    <p class="sub_txt">메인페이지에 많은 콘텐츠를 노출하는 사이트를 퍼블리싱하며 다양한 레이아웃 작성 경험을 키웠습니다.
-                      bx slider 커스텀 시, 레이아웃 수정 뿐만 아니라 상세한 플러그인 커스텀을 익힐 수 있었습니다.
-                      <br>사용 플러그인 : bx slider</p>
-                      <a  class="pf_more" href="./portfolio_site/2/index.html" target="_blank">자세히보기</a>
-                  </li>
-                  <li class="cont">
-                    <a class="main_img" href="./portfolio_site/3_1/index.html" target="_blank">
-                      <img src="./img/pf_logo3.png" alt="클리덤 로고">
-                    </a>
-                    <div class="pf_badge_area">
-                      <span class="pf_badge">적응형</span><span class="pf_badge">W3C통과</span><span class="pf_badge">메인페이지</span>
-                    </div>
-                    <p class="title">클리덤 닥터락토</p>
-                    <p class="sub_txt">해당 페이지는 적응형으로 제작되었습니다.
-                      <br>사용 플러그인 : slick</p>
-                    <a class="pf_more" href="./portfolio_site/3_1/index.html" target="_blank">PC사이트</a>
-                    <a class="pf_more" href="./portfolio_site/3_2/m.index.html" target="_blank">모바일사이트</a>
-                  </li>
-                  <li class="cont">
-                    <a class="main_img" href="./portfolio_site/4/index.html" target="_blank">
-                      <img src="./img/pf_logo4.png" alt="오토인사이드 로고">
-                    </a>
-                    <div class="pf_badge_area">
-                      <span class="pf_badge">PC</span><span class="pf_badge">W3C통과</span><span class="pf_badge">개인제작</span>
-                    </div>
-                    <p class="title">오토인사이드</p>
-                    <p class="sub_txt">메인비주얼 슬라이드 내 이미지 요소에 애니메이션을 적용하는 방법을 익혀 실무에서 더 완성도 있는 페이지를 만들 수 있다는 자신감이 생겼습니다.
-                      <br>사용 플러그인 : slick</p>
-                    <a  class="pf_more" href="./portfolio_site/4/index.html" target="_blank">자세히보기</a>
-                  </li>
-                  <li class="cont">
-                    <a class="main_img" href='./portfolio_site/5/index.html' target="_blank">
-                      <img src="./img/pf_logo5.png" alt="네이버나우 로고">
-                    </a>
-                    <div class="pf_badge_area">
-                      <span class="pf_badge">반응형</span><span class="pf_badge">W3C통과</span><span class="pf_badge">개인제작</span>
-                    </div>
-                    <p class="title">네이버 나우</p>
-                    <p class="sub_txt">포트폴리오 퍼블리싱 후 기존 메인페이지를 분석해보았습니다. 다양한 디바이스 환경에 최적화 하기 위한 코드 및 svg이미지 사용으로
-                      보편적인 사용자 경험을 만들어낸 점이 인상깊었습니다.
-                      <br>사용 플러그인 : slick</p>
-                    <a  class="pf_more" href="./portfolio_site/5/index.html" target="_blank">자세히보기</a>
-                  </li>
-                  <li class="cont">
-                    <a class="main_img" href="./portfolio_site/6/index.html">
-                      <img src="./img/pf_logo6.svg" alt="아프리카TV 로고">
-                    </a>
-                    <div class="pf_badge_area">
-                      <span class="pf_badge">PC</span><span class="pf_badge">W3C통과</span><span class="pf_badge">개인제작</span>
-                    </div>
-                    <p class="title">아프리카TV</p>
-                    <p class="sub_txt">메인페이지의 반복되는 채널 리스트를 배열, if문, 반복문을 사용해 표현했습니다. 푸터 상단의 공지 영역은 플러그인을 사용하지 않고 코드를 작성했습니다.
-                      <br>사용 플러그인 : swiper</p>
-                  </li>
-                  <li class="cont">
-                    <a class="main_img" href="javascript:;">
-                      <img src="./img/logo.png" alt="포트폴리오 로고">
-                    </a>
-                    <div class="pf_badge_area">
-                      <span class="pf_badge">반응형</span><span class="pf_badge">W3C통과</span><span class="pf_badge">개인제작</span>
-                    </div>
-                    <p class="title">개인 포트폴리오</p>
-                    <p class="sub_txt">담당자님께서 빠르고 편하게 저를 파악하실 수 있는 사이트를 만들기 위해
-                    모두에게 친숙한 '3분 즉석식품'을 디자인 컨셉으로 잡았습니다.
-                    이를 통해 친숙하고 편한 제 이미지를 표현하려 했고, 페이지 링크 이동 UI를 통해 '3분' 컨셉을 페이지 전체에 녹이려 했습니다.
-                    아직 많이 부족하지만 열정껏 성장해 든든한 팀원이 되겠습니다!
-                      <br>사용 플러그인 : slick</p>
-                  </li>
-                </ul>
-              </div>
-            </section>
-            <b class="box_inner_left"></b>
-            <b class="box_inner_right"></b>
+          <span class="bottom_box"></span>
+        </div>
+      </section>
+      <section class="slide">
+        <div class="content_area">
+          <div class="title_area">
+            <!-- <img src="./img/logo.png" alt="logo"> -->
+            <h3 class="title"><img src="./img/portfolio_title.png" alt="포트폴리오"></h3>
           </div>
-      </div>
-    </div>
-
+          <ul>
+            <li class="cont">
+              <a class="main_img" href="./portfolio_site/1/index.html" target="_blank">
+                <img src="./img/pf_logo1.png" alt="처음처럼 로고">
+              </a>
+              <div class="pf_badge_area">
+                <span class="pf_badge">PC</span><span class="pf_badge">W3C통과</span><span class="pf_badge">개인제작</span>
+              </div>
+              <p class="title">처음처럼</p>
+              <p class="sub_txt">포트폴리오를 처음 시작한 페이지이기에 의미를 담아 '처음처럼' 페이지를 퍼블리싱했습니다.
+                열정은 처음처럼, 실력은 날이 다르게 상승하는 퍼블리셔가 되겠습니다!
+                <br>사용 플러그인 : AOS  / Slick</p>
+                <a class="pf_more" href="./portfolio_site/1/index.html" target="_blank">자세히보기</a>
+            </li>
+            <li class="cont">
+              <a class="main_img" href="./portfolio_site/2/index.html" target="_blank">
+                <img src="./img/pf_logo2.png" alt="용인시 로고">
+              </a>
+              <div class="pf_badge_area">
+                <span class="pf_badge">PC</span><span class="pf_badge">W3C통과</span><span class="pf_badge">개인제작</span>
+              </div>
+              <p class="title">용인시</p>
+              <p class="sub_txt">메인페이지에 많은 콘텐츠를 노출하는 사이트를 퍼블리싱하며 다양한 레이아웃 작성 경험을 키웠습니다.
+                bx slider 커스텀 시, 레이아웃 수정 뿐만 아니라 상세한 플러그인 커스텀을 익힐 수 있었습니다.
+                <br>사용 플러그인 : bx slider</p>
+                <a  class="pf_more" href="./portfolio_site/2/index.html" target="_blank">자세히보기</a>
+            </li>
+            <li class="cont">
+              <a class="main_img" href="./portfolio_site/3_1/index.html" target="_blank">
+                <img src="./img/pf_logo3.png" alt="클리덤 로고">
+              </a>
+              <div class="pf_badge_area">
+                <span class="pf_badge">적응형</span><span class="pf_badge">W3C통과</span><span class="pf_badge">메인페이지</span>
+              </div>
+              <p class="title">클리덤 닥터락토</p>
+              <p class="sub_txt">해당 페이지는 적응형으로 제작되었습니다.
+                <br>사용 플러그인 : slick</p>
+              <a class="pf_more" href="./portfolio_site/3_1/index.html" target="_blank">PC사이트</a>
+              <a class="pf_more" href="./portfolio_site/3_2/m.index.html" target="_blank">모바일사이트</a>
+            </li>
+            <li class="cont">
+              <a class="main_img" href="./portfolio_site/4/index.html" target="_blank">
+                <img src="./img/pf_logo4.png" alt="오토인사이드 로고">
+              </a>
+              <div class="pf_badge_area">
+                <span class="pf_badge">PC</span><span class="pf_badge">W3C통과</span><span class="pf_badge">개인제작</span>
+              </div>
+              <p class="title">오토인사이드</p>
+              <p class="sub_txt">메인비주얼 슬라이드 내 이미지 요소에 애니메이션을 적용하는 방법을 익혀 실무에서 더 완성도 있는 페이지를 만들 수 있다는 자신감이 생겼습니다.
+                <br>사용 플러그인 : slick</p>
+              <a  class="pf_more" href="./portfolio_site/4/index.html" target="_blank">자세히보기</a>
+            </li>
+            <li class="cont">
+              <a class="main_img" href='./portfolio_site/5/index.html' target="_blank">
+                <img src="./img/pf_logo5.png" alt="네이버나우 로고">
+              </a>
+              <div class="pf_badge_area">
+                <span class="pf_badge">반응형</span><span class="pf_badge">W3C통과</span><span class="pf_badge">개인제작</span>
+              </div>
+              <p class="title">네이버 나우</p>
+              <p class="sub_txt">포트폴리오 퍼블리싱 후 기존 메인페이지를 분석해보았습니다. 다양한 디바이스 환경에 최적화 하기 위한 코드 및 svg이미지 사용으로
+                보편적인 사용자 경험을 만들어낸 점이 인상깊었습니다.
+                <br>사용 플러그인 : slick</p>
+              <a  class="pf_more" href="./portfolio_site/5/index.html" target="_blank">자세히보기</a>
+            </li>
+            <li class="cont">
+              <a class="main_img" href="./portfolio_site/6/index.html" target="_blank">
+                <img src="./img/pf_logo6.svg" alt="아프리카TV 로고">
+              </a>
+              <div class="pf_badge_area">
+                <span class="pf_badge">PC</span><span class="pf_badge">W3C통과</span><span class="pf_badge">개인제작</span>
+              </div>
+              <p class="title">아프리카TV</p>
+              <p class="sub_txt">메인페이지의 반복되는 채널 리스트를 배열, if문, 반복문을 사용해 표현했습니다. 푸터 상단의 공지 영역은 플러그인을 사용하지 않고 코드를 작성했습니다.
+                <br>사용 플러그인 : swiper</p>
+                <a  class="pf_more" href="./portfolio_site/6/index.html" target="_blank">자세히보기</a>
+            </li>
+            <li class="cont">
+              <a class="main_img" href="javascript:;">
+                <img src="./img/logo.png" alt="포트폴리오 로고">
+              </a>
+              <div class="pf_badge_area">
+                <span class="pf_badge">반응형</span><span class="pf_badge">W3C통과</span><span class="pf_badge">개인제작</span>
+              </div>
+              <p class="title">포트폴리오(현재페이지)</p>
+              <p class="sub_txt">담당자님께서 조금 더 편하고 재미있게 제 포트폴리오 사이트를 확인하실 수 있으면
+                좋겠다는 생각에 '편리한 3분 간편식'을 컨셉으로 디자인을 진행한 페이지 입니다.
+                        한 눈에 파악할 수 있는 콘텐츠, 2depth 페이지 내 링크 이동 UI를 통해 '3분' 컨셉을 페이지 전체에 녹이려 했습니다.</p>
+            </li>
+            <li class="cont">
+              <a class="main_img" href="./main_3d.html" target="_blank">
+                <img src="./img/logo_3d.png" alt="포트폴리오 로고">
+              </a>
+              <div class="pf_badge_area">
+                <span class="pf_badge">PC</span><span class="pf_badge">W3C통과</span><span class="pf_badge">개인제작</span>
+              </div>
+              <p class="title">3D버전 포트폴리오</p>
+              <p class="sub_txt">스크롤 애니메이션이 추가된 포트폴리오 페이지입니다. 자바스크립트 스크롤 애니메이션 소스코드를 일부 수정해 사용했고,
+                css로 애니메이션을 구현했습니다. 스마트폰은 지원하지 않으며 모니터 해상도 1920X1080에 최적화되어있습니다.
+                추후 gasp과 scrollTrigger 플러그인을 사용해 애니메이션을 구현하고 싶어 해당 플러그인을 학습중입니다.</p>
+                <a  class="pf_more" href="./main_3d.html" target="_blank">자세히보기</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        <p>끝까지 봐주셔서 감사합니다!<br>간절하게 이 일을 하고싶었던 만큼 빠르게 성장하겠습니다 !</p>
+        <p>Copyright © MiRi Kim, All rights reserved.</p>
+      </footer>
     </div>
   </body>
 </html>

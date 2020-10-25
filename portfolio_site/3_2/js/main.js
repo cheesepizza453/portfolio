@@ -1,10 +1,5 @@
 $(document).ready(function (){
 
-  $(window).one('resize',function() {
-  if($(window).width() <1000) {
-    alert('PC사이즈에 최적화되어있는 화면입니다.');
-  }
-});
 
 // 링크 영역
 $('.link_btn').click(function(){
