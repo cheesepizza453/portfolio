@@ -1,0 +1,342 @@
+@font-face {
+  font-family: "Danjo-bold-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Danjo-bold-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.title_section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.title_section .title_container .title_area {
+  position: relative;
+  background: url("../img/about/about_title.png") no-repeat;
+  width: 637px;
+  height: 152px;
+}
+
+.title_section .title_container .eyes {
+  position: absolute;
+  display: block;
+  width: 22px;
+  height: 20px;
+  background: #000;
+  border-radius: 8px;
+}
+
+.title_section .title_container #left_eye {
+  top: 90px;
+  left: 216px;
+}
+
+.title_section .title_container #right_eye {
+  top: 90px;
+  left: 342px;
+}
+
+/* 프롤로그 */
+.title {
+  font-size: 4.4rem;
+  font-family: Danjo-bold-Regular;
+}
+
+.sub_title {
+  color: #2b2b2b;
+  font-size: 1.25rem;
+}
+
+.prolog_section {
+  position: relative;
+  width: 100%;
+  height: 13000px;
+  font-family: Danjo-bold-Regular;
+  color: #1f1f1f;
+  /* background: #f5f5f5; */
+  z-index: 10;
+  transition: all 1s;
+}
+
+.prolog_section .prolog_back {
+  position: fixed;
+  bottom: 206px;
+  left: 40%;
+  width: 356px;
+  height: 548px;
+  background: url("../img/me.png") no-repeat;
+  background-size: contain;
+}
+/* .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bg1 {
+  width: 200%;
+  height: 100%;
+  background: url("../img/nature_4/1.png") repeat;
+  background-size: contain;
+}
+.bg2 {
+  width: 200%;
+  height: 100%;
+  background: url("../img/nature_4/2.png") repeat;
+  background-size: contain;
+}
+.bg3 {
+  width: 200%;
+  height: 100%;
+  background: url("../img/nature_4/3.png") repeat;
+  background-size: contain;
+}
+.bg4 {
+  width: 200%;
+  height: 100%;
+  background: url("../img/nature_4/4.png") repeat;
+  background-size: contain;
+} */
+
+.prolog_title_container {
+  position: fixed;
+  top: 83%;
+  left: 50%;
+  width: 100%;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+}
+
+.prolog_title_container .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  font-weight: 700;
+  opacity: 0;
+  color: #111;
+  font-size: 3.3rem;
+
+  padding: 20px 30px;
+  border-radius: 20px;
+  background: #000;
+  color: #fff;
+}
+
+#prolog_title1 {
+  opacity: 1;
+}
+
+.introduce_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: #111;
+}
+
+.introduce_container .introduce_text {
+  width: 350px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.introduce_container .introduce_text span:first-child {
+  color: #fff;
+}
+
+.shortcut_container {
+  width: 100%;
+  height: 600vh;
+}
+
+/* 기술스택 */
+.tech_stack_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6vw;
+  width: 100%;
+  height: 100vh;
+  background: #fefefe;
+}
+
+.tech_stack_section .desc_area {
+  width: calc(60vw - 9.375rem);
+  margin-top: -4.6875rem;
+  text-align: center;
+  background: #f1efef;
+  padding: 2rem 3.6rem;
+  border-radius: 0.625em;
+}
+
+.tech_stack_section .selected_title {
+  margin-bottom: 0.75rem;
+  color: #2b2b2b;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.tech_stack_section .selected_desc {
+  color: #2b2b2b;
+  font-size: 1.15rem;
+  font-weight: 300;
+}
+
+/* CSS */
+.css_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 6vw;
+}
+
+.css_section .css_title {
+  margin-bottom: 1.3rem;
+}
+
+.css_section .css_sub_text {
+  margin-bottom: 2rem;
+}
+
+.css_section .codepen_area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.css_section .cp_embed_wrapper {
+  width: 480px;
+  flex-shrink: 0;
+  margin: 1rem 1rem;
+  border: none;
+}
+
+/* 링크 */
+.link_section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  width: 100%;
+  height: auto;
+  padding: 3vw 0 3vw 6vw;
+  background: #f5f5f5;
+}
+
+.link_section .link {
+  display: flex;
+  align-items: center;
+  margin: 0 0.6rem 0.6rem 0;
+  font-size: 1.25rem;
+}
+
+.link_section .link:last-child {
+  margin: 0 0.6rem 0 0;
+}
+
+.link_section .link .link_icon {
+  margin-right: 0.5rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  transform: scale(0.85);
+}
+
+.link_section .link .blog_icon {
+  background: url("../img/about/icon_link.png");
+  background-position: 29.7px 0px;
+}
+
+.link_section .link .git_icon {
+  background: url("../img/about/icon_link.png");
+  background-position: -68px 0px;
+}
+
+.link_section .link .codepen_icon {
+  background: url("../img/about/icon_link.png");
+  background-position: -102px 0px;
+}
+
+.link_section .link .email_icon {
+  background: url("../img/about/icon_link.png");
+  background-position: 0px 0px;
+}
+
+.link_section .link .phone_icon {
+  background: url("../img/about/icon_link.png");
+  background-position: -34px 0px;
+}
+
+.link_section .link a,
+.link_section .link p {
+  position: relative;
+  color: #2b2b2b;
+  font-size: 1.1rem;
+  letter-spacing: -0.0187rem;
+  transition: 0.3s ease;
+
+  z-index: 2;
+}
+
+.link_section .link a:hover,
+.link_section .link p:hover {
+  color: #fff;
+}
+
+.link_section .link a:before,
+.link_section .link p:before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -2%;
+  display: block;
+  width: 106%;
+  height: 1.8rem;
+  background: #111;
+  z-index: -1;
+  border-radius: 5px;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all 0.3s;
+}
+
+.link_section .link a:hover:before,
+.link_section .link p:hover:before {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+/* 코멘트 */
+.comment_section {
+  width: 100%;
+  height: 100vh;
+}
+
+canvas {
+  width: 60vw;
+  height: 50vh;
+}
