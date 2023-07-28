@@ -1,29 +1,19 @@
+const stackSection = document.querySelector(".tech_stack_section");
 const selectedDesc = document.querySelector(".selected_desc");
 const selsctedTitle = document.querySelector(".selected_title");
-const stackSection = document.querySelector(".tech_stack_section");
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
-const cw = window.innerWidth * 0.6;
+const cw = window.innerWidth * 0.9;
 const ch = window.innerHeight * 0.5;
 
 window.addEventListener("resize", () => {
-  cw = window.innerWidth * 0.6;
+  cw = window.innerWidth * 0.9;
   ch = window.innerHeight * 0.5;
 });
 
 ctx.fillStyle = "0xe8e8e8";
 ctx.fillRect(0, 0, cw, ch);
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY == stackSection.offsetTop) {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    initScene();
-    initMouse();
-    initGround();
-    initImageBoxes();
-  }
-});
 
 let engine, render, runner, mouse, mouseConstraint;
 
@@ -89,7 +79,7 @@ function initMouse() {
   mouseConstraint = MouseConstraint.create(engine, {
     mouse: mouse,
     constraint: {
-      stiffness: 0.2,
+      stiffness: 0.5,
       render: {
         visible: false,
       },
@@ -101,11 +91,11 @@ function initMouse() {
 
 function initGround() {
   const walls = [
-    Bodies.rectangle(cw / 2, ch, cw, 150, { isStatic: true, render: { visible: false } }),
-    Bodies.rectangle(cw / 2, 0, cw, 150, { isStatic: true, render: { visible: false } }),
-    Bodies.rectangle(cw / 2, ch, cw, 150, { isStatic: true, render: { visible: false } }),
-    Bodies.rectangle(0, ch / 2, 150, ch, { isStatic: true, render: { visible: false } }),
-    Bodies.rectangle(cw, ch / 2, 150, ch, { isStatic: true, render: { visible: false } }),
+    Bodies.rectangle(cw / 2, ch, cw, 100, { isStatic: true, render: { visible: false } }),
+    Bodies.rectangle(cw / 2, 0, cw, 100, { isStatic: true, render: { visible: false } }),
+    Bodies.rectangle(cw / 2, ch, cw, 100, { isStatic: true, render: { visible: false } }),
+    Bodies.rectangle(0, ch / 2, 100, ch, { isStatic: true, render: { visible: false } }),
+    Bodies.rectangle(cw, ch / 2, 100, ch, { isStatic: true, render: { visible: false } }),
   ];
   Composite.add(engine.world, walls);
 }
@@ -116,8 +106,8 @@ function addRect(x, y, w, h, options = {}) {
 }
 
 function initImageBoxes() {
-  for (let i = 0; i < 7; i++) {
-    const jsWH = Math.floor(Math.random() * cw * (Math.random() * i * 2) + cw * 0.1);
+  for (let i = 0; i < 4; i++) {
+    const jsWH = Math.floor(Math.random() * cw * (Math.random() * i * 1.1) + cw * 0.1);
     const cssWH = Math.floor(Math.random() * cw * (Math.random() * i * 2) + cw * 0.15);
     const htmlWH = Math.floor(Math.random() * cw * (Math.random() * i * 1.4) + cw * 0.35);
     const reactWH = Math.floor(Math.random() * cw * (Math.random() * i * 3) + cw * 0.15);
@@ -125,41 +115,43 @@ function initImageBoxes() {
     const reduxWH = Math.floor(Math.random() * cw * (Math.random() * i * 2) + cw * 0.3);
     const styledWH = Math.floor(Math.random() * cw * (Math.random() * i * 1) + cw * 0.1);
 
-    addRect(jsWH, ch / 3, 100 * 0.5, 100 * 0.5, {
+    addRect(jsWH, ch / 3, 260 * 0.7, 94 * 0.7, {
       label: "JS",
-      render: { sprite: { texture: "./assets/img/about/icon_js.png", xScale: 0.5, yScale: 0.5 } },
-      velocity: { x: 0, y: -5 },
+      render: { sprite: { texture: "./assets/img/about/icon_js.png", xScale: 0.7, yScale: 0.7 } },
+      velocity: { x: 0, y: 0 },
     });
-    addRect(htmlWH, ch / 2, 100 * 0.7, 100 * 0.7, {
+    addRect(htmlWH, ch / 2, 220 * 0.8, 94 * 0.8, {
       label: "HTML",
-      render: { sprite: { texture: "./assets/img/about/icon_html.png", xScale: 0.7, yScale: 0.7 } },
-      velocity: { x: 0, y: -5 },
+      render: { sprite: { texture: "./assets/img/about/icon_html.png", xScale: 0.8, yScale: 0.8 } },
+      velocity: { x: 0, y: 0 },
     });
-    addRect(cssWH, ch / 2, 100 * 0.8, 100 * 0.8, {
+    addRect(cssWH, ch / 2, 220 * 0.8, 94 * 0.8, {
       label: "CSS",
       render: { sprite: { texture: "./assets/img/about/icon_css.png", xScale: 0.8, yScale: 0.8 } },
-      velocity: { x: 0, y: -5 },
+      velocity: { x: 0, y: 0 },
     });
-    addRect(reactWH, 0, 100 * 0.6, 100 * 0.6, {
+    addRect(reactWH, ch / 3, 220 * 0.8, 94 * 0.8, {
       label: "REACT",
-      render: { sprite: { texture: "./assets/img/about/icon_react.png", xScale: 0.6, yScale: 0.6 } },
-      velocity: { x: 0, y: -5 },
+      render: { sprite: { texture: "./assets/img/about/icon_react.png", xScale: 0.8, yScale: 0.8 } },
+      velocity: { x: 0, y: 0 },
     });
-    addRect(tailWH, ch / 2, 100 * 0.6, 100 * 0.6, {
+    addRect(tailWH, ch / 2, 220 * 0.8, 94 * 0.8, {
       label: "TAILWIND",
-      render: { sprite: { texture: "./assets/img/about/icon_tail.png", xScale: 0.6, yScale: 0.6 } },
-      velocity: { x: 0, y: -5 },
+      render: { sprite: { texture: "./assets/img/about/icon_tail.png", xScale: 0.8, yScale: 0.8 } },
+      velocity: { x: 0, y: 0 },
     });
-    addRect(reduxWH, ch / 3, 100 * 0.5, 100 * 0.5, {
+    addRect(reduxWH, ch / 3, 220 * 0.8, 94 * 0.8, {
       label: "REDUX",
       render: {
-        sprite: { texture: "./assets/img/about/icon_redux.png", xScale: 0.5, yScale: 0.5 },
+        sprite: { texture: "./assets/img/about/icon_redux.png", xScale: 0.8, yScale: 0.8 },
       },
+      velocity: { x: 0, y: 0 },
     });
-    addRect(styledWH, ch / 3, 100 * 0.5, 100 * 0.5, {
+    addRect(styledWH, ch / 3, 359 * 0.7, 90 * 0.7, {
       label: "STYLED",
       render: {
-        sprite: { texture: "./assets/img/about/icon_styled.png", xScale: 0.5, yScale: 0.5 },
+        sprite: { texture: "./assets/img/about/icon_styled.png", xScale: 0.7, yScale: 0.7 },
+        velocity: { x: -10, y: -10 },
       },
     });
   }

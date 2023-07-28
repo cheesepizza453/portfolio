@@ -9,36 +9,45 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- 타이틀영역 -->
       <section class="title_section">
         <div class="title_container">
           <div class="title_area">
-            <span id="left_eye" class="eyes"></span>
-            <span id="right_eye" class="eyes"></span>
+            <div class="title">
+              <h1><span class="sr_only">About</span></h1>
+            </div>
           </div>
         </div>
       </section>
-      <section class="prolog_section">
-        <!-- <div class="bg">
-          <div class="bg1"></div>
-          <div class="bg2"></div>
-          <div class="bg3"></div>
-          <div class="bg4"></div>
-        </div> -->
-        <div class="prolog_back"></div>
-        <div class="prolog_title_container">
-          <p class="title" id="prolog_title1">안녕하세요 김미리입니다.</p>
-          <p class="title" id="prolog_title2">몰입으로 이어지는 만족스러운 UX와</p>
-          <p class="title" id="prolog_title3">시각적인 즐거움을 추구합니다.</p>
+
+      <!-- 인사영역 -->
+      <section class="hi_section">
+        <div class="hi_container">
+          <div class="hi_area">
+            <div class="hi_emoji"></div>
+            <div class="text_box">
+              <p class="hi_text">안녕하세요 <span id="change_name">김미리</span>입니다</p>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="tech_stack_section">
-        <p class="stack_title title">기술스택</p>
-        <canvas id="canvas" class="canvas"></canvas>
-        <div class="desc_area">
-          <p class="selected_title">Click</p>
-          <p class="selected_desc">기술스택을 클릭하시면 설명을 확인하실 수 있습니다.</p>
+
+      <!-- 소개영역 -->
+      <section class="introduce_section">
+        <div class="introduce_container">
+          <div class="introduce_area">
+            <span id="introduc_text1" class="introduce_text">몰입으로</span>
+            <span id="introduc_text2" class="introduce_text">이어지는</span>
+            <span id="introduc_text3" class="introduce_text">만족스러운 UX와</span>
+            <span id="introduc_text4" class="introduce_text">시각적인 즐거움을</span>
+            <span id="introduc_text5" class="introduce_text">추구합니다.</span>
+            <span id="text4_box"></span>
+            <span id="text5_box"></span>
+          </div>
         </div>
       </section>
+
+      <!-- 코드펜영역 -->
       <section class="css_section">
         <p class="css_title title">CSS챌린지</p>
         <p class="css_sub_text sub_title">취미로 코드펜에서 다양한 CSS챌린지를 진행하고 있습니다.</p>
@@ -162,7 +171,21 @@
           <scri
         </div>
       </section>
-      <section class="link_section">
+
+      <!-- 기술스택소개영역 -->
+      <section class="tech_stack_section forpt">
+        <div class="tech_stack_container">
+          <div class="tech_img"></div>
+          <div class="desc_area">
+            <p class="selected_title">기술스택</p>
+            <p class="selected_desc">클릭하시면 설명을 확인하실 수 있습니다.</p>
+          </div>
+          <canvas id="canvas" class="canvas"></canvas>
+        </div>
+      </section>
+
+      <!-- 푸터 -->
+      <footer class="link_section">
         <div class="link_area">
           <div class="link">
             <div class="blog_icon link_icon"><span class="sr_only">blog</span></div>
@@ -185,12 +208,12 @@
             <p>010.4148.8670</p>
           </div>
         </div>
-      </section>
+      </footer>
     </div>
 
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
     <script src="./assets/js/about.js"></script>
     <script src="./assets/js/about_matter.js"></script>
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
   </body>
 </html>
