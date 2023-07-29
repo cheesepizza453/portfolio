@@ -10,86 +10,11 @@
   font-size: 20px;
 }
 
-/* 타이틀영역 */
-.title_section {
-  width: 100%;
-  height: 100vh;
-}
-
-.title_section .title_container {
-  width: 100%;
-  height: 100vh;
-}
-
-.title_container .title_area {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: #2b2b2b;
-  background: #fff;
-}
-
-.title_section .title_container .title {
-  position: relative;
-  background: url("../img/about/about_title.png") no-repeat;
-  width: 39.8125rem;
-  height: 9.5rem;
-  background-size: contain;
-}
-
-.title_container .title_area .title:before {
-  content: "";
-  position: absolute;
-  top: -3.75rem;
-  left: 0;
-  width: 39.8125rem;
-  height: 9.5rem;
-  display: block;
-  background: url("../img/about/about_title.png") no-repeat;
-  animation: titleOnBefore 1s forwards ease-out;
-  background-size: contain;
-}
-
-.title_container .title_area .title:after {
-  content: "";
-  position: absolute;
-  top: 3.75rem;
-  left: 0;
-  width: 39.8125rem;
-  height: 9.5rem;
-  display: block;
-  background: url("../img/about/about_title.png") no-repeat;
-  animation: titleOnAfter 1s forwards ease-out;
-  background-size: contain;
-}
-
-@keyframes titleOnBefore {
-  0% {
-    transform: translateY(0rem);
-  }
-  100% {
-    transform: translateY(3.75rem);
-  }
-}
-
-@keyframes titleOnAfter {
-  0% {
-    transform: translateY(0rem);
-  }
-  100% {
-    transform: translateY(-3.75rem);
-  }
-}
-
 /* Hihi */
 .hi_section {
   position: relative;
   width: 100%;
-  margin-top: 100vh;
-  height: 187.5rem;
+  /* height: 187.5rem; */
 }
 
 .hi_section .hi_container {
@@ -137,8 +62,8 @@
 /* 소개영역 */
 .introduce_section {
   width: 100%;
-  height: 200vh;
-  margin-top: 150vh;
+  height: 2000px;
+  margin-top: 50vh;
   background: #fff;
 }
 
@@ -151,253 +76,130 @@
   align-items: center;
   width: 100%;
   height: 100vh;
+  opacity: 0;
+}
+
+.introduce_container.on {
+  opacity: 1;
 }
 
 .introduce_area {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  padding-left: 50%;
+  margin-top: 170px;
 }
 
-.introduce_container .introduce_text {
-  display: none;
-}
-.introduce_container.on .introduce_text {
+.introduce_area .me {
   position: absolute;
-  font-size: 8.125rem;
-  font-weight: 300;
+  left: 260px;
+  top: 80px;
+  width: 600px;
+  height: 600px;
+  background: url("../img/about/me2.png") no-repeat;
+  background-size: contain;
+  opacity: 0;
+  transition: all 3s;
+}
+
+.introduce_container.on .me {
+  opacity: 1;
+}
+
+.introduce_area .introduce_text {
+  position: relative;
+  font-size: 90px;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-weight: 500;
+
   display: inline-block;
 }
 
-.introduce_container.on #introduc_text1 {
-  font-weight: 800;
-  animation: text1 10s both;
-  transform-origin: 0rem 0rem;
-  z-index: 3;
+.inroduce_text_box {
+  position: relative;
+  margin-bottom: 10px;
 }
 
-@keyframes text1 {
-  0% {
-    transform: scale(6) translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    animation-timing-function: cubic-bezier(0.99, 0.03, 0.89, -0.02);
-  }
-
-  10% {
-    transform: scale(1) translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-  }
-  15% {
-    transform: scale(1) translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-  }
-  18% {
-    transform: scale(1) translate(0, -50%);
-    top: 50%;
-    left: 18.75rem;
-  }
-  20% {
-    transform: scale(1) translate(0, -50%);
-    top: 50%;
-    left: 18.75rem;
-    animation-timing-function: cubic-bezier(0.85, -0.09, 0.82, 1.13);
-  }
-  25% {
-    transform: scale(1) translate(0, -50%);
-    top: calc(50% - 5rem);
-    left: 18.75rem;
-  }
-  30% {
-    transform: scale(1) translate(0, -50%);
-    top: calc(50% - 5rem);
-    left: 18.75rem;
-    animation-timing-function: cubic-bezier(0.85, -0.09, 0.82, 1.13);
-  }
-  35% {
-    transform: scale(1) translate(0, 0);
-    top: calc(50% - 5rem);
-    left: -200vw;
-  }
-
-  100% {
-    transform: scale(1) translate(0, 0);
-    top: calc(50% - 5rem);
-    left: -200vw;
-  }
-}
-
-.introduce_container.on #introduc_text2 {
-  animation: text2 10s both;
-  transform-origin: 0rem 0rem;
-  animation-timing-function: cubic-bezier(0.85, -0.09, 0.82, 1.13);
-  z-index: 3;
-}
-
-@keyframes text2 {
-  0% {
-    transform: translate(-50%, 0%);
-    top: calc(50% - 4.375rem);
-    right: -100%;
-  }
-
-  14% {
-    transform: translate(-50%, 0%);
-    top: calc(50% - 4.375rem);
-    right: -100%;
-  }
-
-  18% {
-    transform: translate(-50%, 0%);
-    top: calc(50% - 4.375rem);
-    right: 28.75rem;
-  }
-
-  20% {
-    transform: translate(-50%, 0%);
-    top: calc(50% - 4.375rem);
-    right: 28.75rem;
-    animation-timing-function: cubic-bezier(0.85, -0.09, 0.82, 1.13);
-  }
-
-  25% {
-    transform: translate(-50%, 0%);
-    top: calc(50% - 9.0625rem);
-    right: 28.75rem;
-  }
-  30% {
-    transform: translate(-50%, 0%);
-    top: calc(50% - 9.0625rem);
-    right: 28.75rem;
-  }
-  35% {
-    transform: translate(-50%, 0%);
-    top: calc(50% - 9.0625rem);
-    right: 200vw;
-  }
-  100% {
-    transform: translate(-50%, 0%);
-    top: calc(50% - 145px);
-    right: 200vw;
-  }
-}
-
-.introduce_container.on #introduc_text3 {
-  animation: text3 10s both;
-  transform-origin: 0rem 0rem;
-  animation-timing-function: cubic-bezier(0.85, -0.09, 0.82, 1.13);
-  z-index: 3;
-}
-
-@keyframes text3 {
-  0% {
-    transform: scale(1) translate(0, 0);
-    bottom: -200vh;
-    left: 46.875rem;
-  }
-
-  20% {
-    transform: scale(1) translate(0, 0);
-    bottom: -200vh;
-    left: 39.375rem;
-  }
-  25% {
-    transform: scale(1) translate(0, 0);
-    bottom: 21.25rem;
-    left: 39.375rem;
-  }
-  30% {
-    transform: scale(1) translate(0, 0);
-    bottom: 21.25rem;
-    left: 39.375rem;
-  }
-  35% {
-    transform: scale(1) translate(0, 0);
-    bottom: 21.25rem;
-    left: -100%;
-  }
-  100% {
-    transform: scale(1) translate(0, 0);
-    bottom: 21.25rem;
-    left: -100%;
-  }
-}
-
-.introduce_container.on #introduc_text4 {
-  /* animation: text4 10s both; */
-  top: 20rem;
-  left: 50%;
-  transform: translate(-50%, 0);
-  transform-origin: 0rem 0rem;
-
-  z-index: 1;
-}
-.introduce_container.on #text4_box {
+.inroduce_text_box .box {
   position: absolute;
-  width: 62.5rem;
-  height: 134px;
   display: block;
-  top: 19.8rem;
-  left: 50%;
-  transform: translate(-50%, 0);
+  left: 0;
+  bottom: 2%;
+  width: 100%;
+  height: 102%;
+  background: rgba(0, 0, 0, 0.5);
   background: #fff;
-  animation: text4Box 10s both;
-  animation-timing-function: cubic-bezier(0.73, 0.7, 1, 0.3);
+}
+
+.introduce_container.on .inroduce_text_box .introduce_text {
+  position: relative;
+  animation: introduceText 1s forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes introduceText {
+  0% {
+    transform: translate(0, 0%);
+  }
+  100% {
+    transform: translate(0, -100%);
+  }
+}
+
+.text_1 .box {
   z-index: 2;
 }
-
-@keyframes text4Box {
-  0%,
-  37% {
-    height: 134px;
-  }
-  40%,
-  55% {
-    height: 0;
-  }
-  58%,
-  100% {
-    height: 134px;
-  }
+.text_2 .box {
+  z-index: 4;
 }
-
-.introduce_container.on #introduc_text5 {
-  bottom: 20.625rem;
-  left: 50%;
-  transform: translate(-50%, 0);
+.text_3 .box {
+  z-index: 6;
+}
+.text_4 .box {
+  z-index: 8;
+}
+.text_1 .introduce_text {
   z-index: 1;
 }
-
-.introduce_container.on #text5_box {
-  position: absolute;
-  width: 37.5rem;
-  height: 134px;
-  display: block;
-  left: 50%;
-  bottom: 20.625rem;
-  transform: translate(-50%, 0);
-  background: #fff;
-  animation: text5Box 10s both;
-  animation-timing-function: cubic-bezier(0.73, 0.7, 1, 0.3);
-  z-index: 2;
+.text_2 .introduce_text {
+  z-index: 3;
+}
+.text_3 .introduce_text {
+  z-index: 5;
+}
+.text_4 .introduce_text {
+  z-index: 7;
 }
 
-@keyframes text5Box {
-  0%,
-  45% {
-    height: 134px;
-  }
-  48%,
-  55% {
-    height: 0;
-  }
-  58%,
-  100% {
-    height: 134px;
-  }
+#introduce_text1 {
+  margin-right: 14px;
+}
+#introduce_text2 {
+  animation-delay: 0.15s;
+}
+#introduce_text3 {
+  animation-delay: 0.3s;
+  margin-right: 14px;
+}
+#introduce_text4 {
+  animation-delay: 0.5s;
+}
+#introduce_text5 {
+  animation-delay: 0.65s;
+  margin-right: 14px;
+}
+#introduce_text6 {
+  animation-delay: 0.8s;
+}
+#introduce_text7 {
+  animation-delay: 0.95s;
 }
 
 /* CSS */
@@ -538,8 +340,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  /* padding-top: 100vh; */
-
   transition: all 0.5s ease-out;
   z-index: 0;
 }

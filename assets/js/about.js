@@ -49,25 +49,25 @@ window.addEventListener("scroll", () => {
     hiContainer.style.transform = `translate(0,${0}px)`;
   }
 
-  // 소개영역
-  console.log(window.scrollY, introduceSection.offsetTop, introduceSection.offsetTop + introduceSection.offsetHeight);
   if (
     window.scrollY > introduceSection.offsetTop &&
     window.scrollY + window.innerHeight < introduceSection.offsetTop + introduceSection.offsetHeight
   ) {
     introduceContainer.classList.add("on");
-    introduceContainer.style.position = "fixed";
+    introduceContainer.style.position = `fixed`;
     introduceContainer.style.top = "0";
     introduceContainer.style.left = "0";
   } else if (window.scrollY + window.innerHeight >= introduceSection.offsetTop + introduceSection.offsetHeight) {
-    introduceContainer.classList.remove("on");
-    introduceContainer.style.postion = "relative";
-    introduceContainer.style.top = "initial";
-    introduceContainer.style.left = "intial";
-  } else {
-    introduceContainer.classList.remove("on");
     introduceContainer.style.position = `relative`;
     introduceContainer.style.top = "initial";
     introduceContainer.style.left = "initial";
+    introduceContainer.classList.remove("on");
+    introduceContainer.style.transform = `translate(0,${introduceSection.offsetTop + introduceSection.offsetTop}px)`;
+  } else {
+    introduceContainer.style.position = `relative`;
+    introduceContainer.style.top = "initial";
+    introduceContainer.style.left = "initial";
+    introduceContainer.classList.remove("on");
+    introduceContainer.style.transform = `translate(0,0px)`;
   }
 });
