@@ -10,6 +10,10 @@
   font-size: 20px;
 }
 
+.only_mobile {
+  display: none;
+}
+
 /* Hihi */
 .hi_section {
   position: relative;
@@ -97,14 +101,16 @@
 
 .introduce_area .me {
   position: absolute;
-  left: 1070px;
-  top: 80px;
-  width: 600px;
-  height: 600px;
+  left: calc(72vw - 230px);
+  top: calc(50% - 110px);
+  width: 28vw;
+  height: 28vw;
   background: url("../img/about/me2.png") no-repeat;
   background-size: contain;
   opacity: 0;
   transition: all 3s;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
 .introduce_container.on .me {
@@ -355,17 +361,6 @@
   justify-content: space-between;
 }
 
-/* .tech_stack_section .tech_img {
-  position: absolute;
-  width: 37.5rem;
-  height: 37.5rem;
-  background: url("../img/about/me.png") no-repeat;
-  background-size: contain;
-  z-index: -1;
-  bottom: 4.875rem;
-  left: 12.5rem;
-} */
-
 .tech_stack_section .desc_area {
   width: 100%;
   text-align: center;
@@ -387,6 +382,16 @@ canvas {
   height: 50vh;
 }
 
+@media (min-width: 1921px) {
+  .introduce_area {
+    padding-left: 23%;
+  }
+  .introduce_area .me {
+    left: auto;
+    right: 23%;
+  }
+}
+
 @media screen and (max-width: 1900px) {
   html {
     font-size: 14px;
@@ -396,7 +401,14 @@ canvas {
   html {
     font-size: 12px;
   }
+  .introduce_area {
+    padding-left: 10%;
+  }
 
+  .introduce_area .me {
+    left: calc(72vw - 10%);
+    top: calc(50% - 5.5rem);
+  }
   .introduce_container.on .introduce_text {
     font-size: 6rem;
   }
@@ -411,5 +423,59 @@ canvas {
 
   #text5_box {
     bottom: 23.625rem;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1550px) {
+  .introduce_container.on .introduce_text {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .only_mobile {
+    display: block;
+  }
+
+  .title {
+    font-size: 5rem;
+  }
+
+  .sub_title {
+    font-size: 1.4rem;
+  }
+  .hi_section .hi_container .text_box {
+    text-align: center;
+  }
+
+  .hi_section .hi_container .hi_text {
+    font-size: 5rem;
+  }
+
+  .hi_section .hi_container #change_name {
+    min-width: 15.575rem;
+  }
+
+  .introduce_area {
+    margin-top: 0;
+    padding: 0;
+    align-items: center;
+  }
+  .introduce_container.on .introduce_text {
+    font-size: 9vw;
+  }
+  .introduce_area .me {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 5rem;
+  }
+
+  .tech_stack_section .selected_title {
+    font-size: 4rem;
+  }
+
+  .link_section {
+    padding: 10vw 0 10vw 6vw;
   }
 }
