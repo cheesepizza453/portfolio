@@ -49,6 +49,14 @@ window.addEventListener("scroll", () => {
     hiContainer.style.transform = `translate(0,${0}px)`;
   }
 
+  // 소개 영역
+
+  // 스크롤이 오프셋탑보다 작으면 포지션 렐러티브 , translate 0
+  // 위에서 내려오면서 스크롤이 오프셋탑보다 커질 때 : 포지션 픽스드로 바뀜,
+  // 스크롤이 오프셋탑보다 크고 오프셋 하이츠보다 작을 때 포지션 픽스드
+  // 스크롤이 오프셋 하이츠보다 클 때 포지션 렐러티브 translate Y
+
+  console.log(window.scrollY, introduceSection.offsetTop + introduceSection.offsetTop);
   if (
     window.scrollY > introduceSection.offsetTop &&
     window.scrollY + window.innerHeight < introduceSection.offsetTop + introduceSection.offsetHeight
@@ -57,17 +65,20 @@ window.addEventListener("scroll", () => {
     introduceContainer.style.position = `fixed`;
     introduceContainer.style.top = "0";
     introduceContainer.style.left = "0";
+    introduceContainer.style.transform = `translate(0,0px)`;
   } else if (window.scrollY + window.innerHeight >= introduceSection.offsetTop + introduceSection.offsetHeight) {
     introduceContainer.style.position = `relative`;
     introduceContainer.style.top = "initial";
     introduceContainer.style.left = "initial";
-    introduceContainer.classList.remove("on");
-    introduceContainer.style.transform = `translate(0,${introduceSection.offsetTop + introduceSection.offsetTop}px)`;
+    // introduceContainer.classList.remove("on");
+    introduceContainer.style.transform = `translate(0,${
+      introduceSection.offsetHeight - introduceContainer.offsetHeight
+    }px)`;
   } else {
     introduceContainer.style.position = `relative`;
     introduceContainer.style.top = "initial";
     introduceContainer.style.left = "initial";
-    introduceContainer.classList.remove("on");
+    // introduceContainer.classList.remove("on");
     introduceContainer.style.transform = `translate(0,0px)`;
   }
 });

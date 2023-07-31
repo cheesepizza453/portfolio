@@ -10,10 +10,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Noto Sans KR", sans-serif;
-}
-
 html,
 body,
 div,
@@ -153,4 +149,8 @@ a {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+body {
+  font-family: "Pretendard";
 }

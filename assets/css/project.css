@@ -1,3 +1,9 @@
+body {
+  min-width: 1908px;
+  width: 1908px;
+  max-width: 1908px;
+}
+
 .title_section {
   display: flex;
   flex-direction: column;
@@ -5,13 +11,13 @@
   justify-content: center;
   width: 100%;
   height: 100vh;
-  padding: 6rem;
+  padding: 96px;
 }
 
 .title_section .title {
   position: relative;
-  width: 51.375rem;
-  height: 9.5rem;
+  width: 822px;
+  height: 152px;
   background: url("../img/projects/projects_title.png");
 }
 
@@ -27,12 +33,12 @@
 }
 
 .title_section .desc {
-  font-size: 1.2rem;
+  font-size: 19.2px;
 }
 
 .projects_section {
   width: 100%;
-  height: 20000px;
+  height: 8000px;
   padding: 6vw;
   background: #fff;
   overflow: hidden;
@@ -40,14 +46,6 @@
 
 .projects_section .projects_container {
   width: 100%;
-}
-
-.projects_section ul {
-  position: relative;
-  /* display: none; */
-  width: 100%;
-  z-index: 101;
-  color: #fff;
 }
 
 .projects_section .project_container {
@@ -84,77 +82,179 @@
   transition: all 0.2s ease-in-out;
 }
 
-.project_area {
+.projects_inner {
+  position: relative;
+  /* display: none; */
+  width: 100%;
+  z-index: 101;
+  color: #fff;
+}
+
+.projects_area {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 6vw;
+  align-items: start;
+  padding: 250px;
   opacity: 0;
   transition: all 0.2s ease;
 }
 
-.project_ul.on .project_area {
+.projects_inner.on .projects_area {
   opacity: 1;
 }
-.project_area.xtend .project_img {
+
+/* 리스트 */
+.projects_list {
+  width: 100%;
+  padding: 0 20px 20px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.project_line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.project_name {
+  display: flex;
+  align-items: start;
+  padding: 40px 0 20px 0;
+  font-size: 40px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.project_name .team {
+  margin-left: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.open_btn {
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.project_line.on .open_btn {
+  transform: rotateX(180deg);
+}
+
+.project_item_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  filter: opacity(0.2);
+  transition: all 0.5s;
+}
+
+.project_item_bg.bg1 {
+  background: url("../img/projects/bg_xtend.gif") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.project_item_bg.bg2 {
+  background: url("../img/projects/bg_nenia.gif") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.project_item_bg.bg3 {
+  background: url("../img/projects/bg_school.gif") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.project_item_bg.bg4 {
+  background: url("../img/projects/bg_perpett.gif") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* 프로젝트 상세 */
+.projects_area.xtend .project_img {
   width: 330px;
   height: 330px;
   margin-right: 60px;
   background: #f8f8f8;
 }
 
-.project_area .project_info {
+.project_details {
+  display: none;
+  transition: all 1s;
+  opacity: 0;
+}
+
+.project_details.on {
+  display: block;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.projects_area .project_info {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 40px;
 }
 
-.project_area .project_info .project_title {
-  display: flex;
-  align-items: end;
-  margin-bottom: 20px;
-  font-size: 4.5rem;
-  letter-spacing: 0.025rem;
-  font-weight: 800;
+.projects_area .project_info .project_desc {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 100;
 }
 
-.project_area .project_info .project_desc {
-  margin-bottom: 10px;
-  font-size: 1.4rem;
-  font-weight: 300;
+.projects_area .project_info .project_skills {
+  margin: 20px 0 50px 0;
 }
 
-.project_area .project_info .project_skills {
-  margin: 30px 0;
+.projects_area .project_info .skill:first-child {
+  margin-left: 0;
 }
 
-.project_area .project_info .skill {
-  font-size: 0.9rem;
-  padding: 0.3rem 0.8rem;
-  margin-left: 1rem;
-  border: 1px solid #fff;
+.projects_area .project_info .skill {
+  font-size: 14px;
+  padding: 4.8px 12.8px;
+  margin-left: 10px;
   border-radius: 0.7rem;
   background: rgba(255, 255, 255, 0.3);
 }
 
-.project_area .project_info .project_duration {
-  padding-left: 15px;
+.projects_area .project_info .project_duration {
   margin-bottom: 20px;
-  font-weight: 300;
+  font-weight: 100;
 }
 
-.project_area .project_duration strong {
+.projects_area .project_duration strong {
   margin-right: 10px;
   font-weight: 500;
 }
 
-.project_area .project_info .link_area {
-  padding-left: 15px;
-  font-weight: 300;
+.projects_area .project_info .link_area {
+  font-weight: 700;
 }
 
-.project_area .link_area a {
+.projects_area .link_area a {
   color: #fff;
+}
+.projects_area .link_area a:first-child {
+  margin-right: 10px;
+}
+
+.prolject_img_link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../img/projects/xtend_thum.png");
 }
