@@ -41,7 +41,7 @@
 
 .projects_section {
   width: 100%;
-  height: 8000px;
+  height: 5500px;
   padding: 6vw;
   background: #fff;
   overflow: hidden;
@@ -65,7 +65,7 @@
 .projects_bg .left_bg {
   position: absolute;
   top: 0;
-  right: 52.9vw;
+  right: 52.4vw;
   width: 5px;
   height: 100vh;
   background: #000;
@@ -76,7 +76,7 @@
 .projects_bg .right_bg {
   position: absolute;
   top: 0;
-  left: 47vw;
+  left: 46.3vw;
   width: 5px;
   height: 100vh;
   background: #000;
@@ -160,7 +160,7 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  filter: opacity(0.15);
+  filter: opacity(0.25);
   transition: all 0.5s;
 }
 
@@ -259,10 +259,10 @@
 
 @media (min-width: 1024px) and (max-width: 1550px) {
   .projects_bg .left_bg {
-    right: 53.5vw;
+    right: 53.3vw;
   }
   .projects_bg .right_bg {
-    left: 46.2vw;
+    left: 45.2vw;
   }
 }
 
@@ -279,11 +279,11 @@
   }
 
   .projects_bg .left_bg {
-    right: 55.1vw;
+    right: 54.7vw;
   }
 
   .projects_bg .right_bg {
-    left: 44vw;
+    left: 43.6vw;
   }
 
   .projects_area {

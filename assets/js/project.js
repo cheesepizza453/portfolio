@@ -80,8 +80,8 @@ for (let i = 0; i < porjectLine.length; i++) {
 window.addEventListener("scroll", () => {
   // j 스크롤에 따라 변화
   if (window.scrollY > 10) {
-    if (j.offsetHeight < 8000) {
-      j.style.height = `${Math.min(window.scrollY * 1.4, 3000)}px`;
+    if (j.offsetHeight < 5500) {
+      j.style.height = `${Math.min(window.scrollY * 1.7, 2000)}px`;
     }
   }
   if (window.scrollY > 10 && window.scrollY < 100) {
@@ -92,7 +92,7 @@ window.addEventListener("scroll", () => {
   if (window.scrollY >= projectSection.offsetTop && window.scrollY < projectSection.offsetHeight) {
     const bgWidth =
       ((window.scrollY - projectSection.offsetTop) / (projectSection.offsetHeight - projectSection.offsetTop)) * 200;
-
+    console.log(bgWidth);
     project.style.position = `fixed`;
     project.style.top = `0`;
     project.style.left = `0`;
@@ -129,7 +129,7 @@ window.addEventListener("scroll", () => {
     rightBg.style.width = `5px`;
   }
 
-  if (window.scrollY >= 6000 && window.scrollY < projectSection.offsetHeight) {
+  if (window.scrollY >= 3500 && window.scrollY < projectSection.offsetHeight) {
     projectInner.classList.add("on");
   } else {
     projectInner.classList.remove("on");
