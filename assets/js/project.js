@@ -92,7 +92,7 @@ window.addEventListener("scroll", () => {
   if (window.scrollY >= projectSection.offsetTop && window.scrollY < projectSection.offsetHeight) {
     const bgWidth =
       ((window.scrollY - projectSection.offsetTop) / (projectSection.offsetHeight - projectSection.offsetTop)) * 200;
-    console.log(bgWidth);
+
     project.style.position = `fixed`;
     project.style.top = `0`;
     project.style.left = `0`;

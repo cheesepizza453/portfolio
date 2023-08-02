@@ -24,11 +24,6 @@ function changeText() {
 setInterval(changeText, 200);
 
 window.addEventListener("scroll", () => {
-  // 인사
-  // 스크롤이 오프셋탑보다 작으면 포지션 렐러티브 , translate 0
-  // 위에서 내려오면서 스크롤이 오프셋탑보다 커질 때 : 포지션 픽스드로 바뀜,
-  // 스크롤이 오프셋탑보다 크고 오프셋 하이츠보다 작을 때 포지션 픽스드
-  // 스크롤이 오프셋 하이츠보다 클 때 포지션 렐러티브 translate Y
   if (
     window.scrollY > hiSection.offsetTop &&
     window.scrollY + window.innerHeight < hiSection.offsetTop + hiSection.offsetHeight
