@@ -6,16 +6,14 @@ const gnbMenu1 = document.getElementById("gnb_menu_1");
 const gnbMenu2 = document.getElementById("gnb_menu_2");
 const gnbBg = document.querySelector(".gnb_bg");
 
-setTimeout(() => {
-  prologArea.classList.add("out");
-}, 2000);
-
 window.addEventListener("mousemove", (e) => {
   const x = e.clientX;
   const y = e.clientY;
 
-  gnbPath.style.left = `${x - gnbPath.offsetWidth / 2}px`;
-  gnbPath.style.top = `${y - gnbPath.offsetHeight / 2}px`;
+  // gnbPath.style.left = `${x - gnbPath.offsetWidth / 2}px`;
+  // gnbPath.style.top = `${y - gnbPath.offsetHeight / 2}px`;
+
+  gnbPath.style.cssText = `left:${x - gnbPath.offsetWidth / 2}px; top:${y - gnbPath.offsetHeight / 2}px;`;
 });
 
 gnbMenu1.addEventListener("mouseover", () => {
